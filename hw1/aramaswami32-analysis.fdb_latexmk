@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1537881353 "c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex" "aramaswami32-analysis.pdf" "aramaswami32-analysis" 1537881398
+["pdflatex"] 1537881734 "c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex" "aramaswami32-analysis.pdf" "aramaswami32-analysis" 1537881738
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -69,9 +69,9 @@
   "C:/Program Files/MiKTeX 2.9/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/arvin/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1516569361 4062055 802770c7e37e204a803c7bbb7498ee22 ""
   "C:/Users/arvin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1516567009 80423 3cfba73105275d3ad410701d89fbdf7a ""
-  "aramaswami32-analysis.aux" 1537881356 1316 3eca8257e49a17d7e89a2dd007af8d0b ""
-  "aramaswami32-analysis.tex" 1537881398 10693 7054c35362ee208f294dca3bf48e657e ""
-  "c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex" 1537881398 10693 7054c35362ee208f294dca3bf48e657e ""
+  "aramaswami32-analysis.aux" 1537881737 1386 d1eae83b4d95c598cbd455a626cc8e9d ""
+  "aramaswami32-analysis.tex" 1537881734 11220 10b775d70bd86e3cb7999933e2f62c03 ""
+  "c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex" 1537881734 11220 10b775d70bd86e3cb7999933e2f62c03 ""
   "diabetes/diabetes_boost_trainingsize.png" 1537875696 46113 962c86c4ac4d1d33d6804fd35afb0a2f ""
   "diabetes/diabetes_dt_trainingsize.png" 1537875027 43131 8bbaf08fdcc6aa5c4b62e8c5e94c0859 ""
   "diabetes/diabetes_knn_trainingsize.png" 1537875895 31396 4bb9db866c0ef3778be63fab46c7baeb ""

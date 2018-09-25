@@ -171,6 +171,16 @@
         \subsection{k-Nearest Neighbors}
 
         There was not much of an overfitting problem for this algorithm; there was
-        very low variance in the mushrooms dataset.
+        very low variance in the mushrooms dataset. However, there is some overfitting
+        in the diabetes dataset, as can be seen in the upshot in the accuracy to 1.0 when the training
+        size is larger. Picking a larger value for $K$ could help with this issue (the
+        values of $K$ that were tested in this were $1, 2, 3, 4, 5$; possibly increasing
+        $K$ to 11 could resolve this issue).
+
+        \section{Sources}
+
+        https://www.kaggle.com/uciml/pima-indians-diabetes-database
+
+        https://www.kaggle.com/uciml/mushroom-classification
 
     \end{document}
