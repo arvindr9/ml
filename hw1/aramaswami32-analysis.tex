@@ -34,66 +34,21 @@
     \newcommand{\Not}{\sim}
     \begin{document}
         \section{Classification problems}
-            \subsection{Conflicting clinical diagnoses}
+            \subsection{Pima Indians Diabetes Dataset}
 
-            This classification problem involves predicting whether or not the diagnosis of a genetic variant
-            will be conflicting between two labs, given several features.
+            This classification problem involves predicting whether or not a person has diabetes
+            based on certain features.
 
-            Here is a description of the first few:
+            The features are: Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age.
 
-            CHROM: Chromosome the variant is located on
+            The dataset has 768 entries.
 
-            POS: Position on the chromosome the variant is located on.
+            This classification problem is interesting since it is not necessary
+            clear whether someone has diabetes given those limited features, so there
+            is not necessarily a clearly separable boundary. Running different algorithms
+            in this problem should give some insight on how to find a proper boundary for
+            such a dataset.
 
-            REF: Reference allele
-            
-            ALT: Alternate allele
-            
-            AF_ESP: Allele frequencies from GO-ESP
-            
-            AF_EXAC: Allele frequencies from ExAC
-            
-            AF_TGP: Allele frequences from the 1000 genomes project
-            
-            CLNDISDB: Tag-value pairs of disease database name and identifier, e.g. OMIM:NNNNNN
-            % CLNDISDBINCL
-            % CLNDN
-            % CLNDNINCL
-            % CLNHGVS
-            % CLNSIGINCL
-            % CLNVC
-            % CLNVI
-            % MC
-            % ORIGIN
-            % SSR
-            % CLASS
-            % Allele
-            % Consequence
-            % IMPACT
-            % SYMBOL
-            % Feature_type
-            % Feature
-            % BIOTYPE
-            % EXON
-            % INTRON
-            % cDNA_position
-            % CDS_position
-            % Protein_position
-            % Amino_acids
-            % Codons
-            % DISTANCE
-            % STRAND
-            % BAM_EDIT
-            % SIFT
-            % PolyPhen
-            % MOTIF_NAME
-            % MOTIF_POS
-            % HIGH_INF_POS
-            % MOTIF_SCORE_CHANGE
-            % LoFtool
-            % CADD_PHRED
-            % CADD_RAW
-            % BLOSUM62
             \subsection{Predicting whether mushrooms are edible}
 
             The objective of this classification problem is to predict
@@ -112,9 +67,14 @@
         The pruning used for the decision trees was caused by setting a limit on the maximum depth.
 
         Here are the plots:
-        \includegraphics{mushrooms/mushroom_dt_trainingsize.png}
+
+        \includegraphics[width=8cm]{mushrooms/mushroom_dt_trainingsize.png}
+        \includegraphics[width=8cm]{diabetes/diabetes_dt_trainingsize.png}
 
         \subsection{Neural Networks}
+
+        \includegraphics[width=8cm]{mushrooms/mushroom_nn_trainingsize.png}
+        \includegraphics[width=8cm]{diabetes/diabetes_nn_trainingsize.png}
 
         \subsection{Boosting}
         The experiments in this project used an AdaBoost classifier with a base estimator of decision trees.
@@ -122,19 +82,25 @@
         in the boosted classifier were varied.
 
         Here are the plots taken for boosting:
-        \includegraphics{mushrooms/mushroom_boost_trainingsize.png}
+        
+        \includegraphics[width=8cm]{mushrooms/mushroom_boost_trainingsize.png}
+        \includegraphics[width=8cm]{diabetes/diabetes_boost_trainingsize.png}
 
         \subsection{Support Vector Machines}
         The Support Vector Machines were tested with the linear kernel function and the RBF kernel function.
 
         The SVM plots are shown below:
-        \includegraphics{mushrooms/mushroom_svm_trainingsize.png}
+
+        \includegraphics[width=8cm]{mushrooms/mushroom_svm_trainingsize.png}
+        \includegraphics[width=8cm]{diabetes/diabetes_svm_trainingsize.png}
 
         \subsection{k-Nearest Neighbors}
         The KNN classifiers were tested with varying K values.
 
         Here are the KNN plots:
-        \includegraphics{mushrooms/mushroom_knn_trainingsize.png}
+
+        \includegraphics[width=8cm]{mushrooms/mushroom_knn_trainingsize.png}
+        \includegraphics[width=8cm]{diabetes/diabetes_knn_trainingsize.png}
 
         \section{Analysis}
 

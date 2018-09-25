@@ -94,6 +94,58 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT mushrooms/mushroom_dt_trainingsize.png
+INPUT ./mushrooms/mushroom_dt_trainingsize.png
+OUTPUT aramaswami32-analysis.pdf
+INPUT ./mushrooms/mushroom_dt_trainingsize.png
+INPUT ./mushrooms/mushroom_dt_trainingsize.png
+INPUT ./mushrooms/mushroom_dt_trainingsize.png
+INPUT diabetes/diabetes_dt_trainingsize.png
+INPUT ./diabetes/diabetes_dt_trainingsize.png
+INPUT ./diabetes/diabetes_dt_trainingsize.png
+INPUT ./diabetes/diabetes_dt_trainingsize.png
+INPUT ./diabetes/diabetes_dt_trainingsize.png
+INPUT C:/Users/arvin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
+INPUT mushrooms/mushroom_nn_trainingsize.png
+INPUT ./mushrooms/mushroom_nn_trainingsize.png
+INPUT ./mushrooms/mushroom_nn_trainingsize.png
+INPUT ./mushrooms/mushroom_nn_trainingsize.png
+INPUT ./mushrooms/mushroom_nn_trainingsize.png
+INPUT diabetes/diabetes_nn_trainingsize.png
+INPUT ./diabetes/diabetes_nn_trainingsize.png
+INPUT ./diabetes/diabetes_nn_trainingsize.png
+INPUT ./diabetes/diabetes_nn_trainingsize.png
+INPUT ./diabetes/diabetes_nn_trainingsize.png
+INPUT mushrooms/mushroom_boost_trainingsize.png
+INPUT ./mushrooms/mushroom_boost_trainingsize.png
+INPUT ./mushrooms/mushroom_boost_trainingsize.png
+INPUT ./mushrooms/mushroom_boost_trainingsize.png
+INPUT ./mushrooms/mushroom_boost_trainingsize.png
+INPUT diabetes/diabetes_boost_trainingsize.png
+INPUT ./diabetes/diabetes_boost_trainingsize.png
+INPUT ./diabetes/diabetes_boost_trainingsize.png
+INPUT ./diabetes/diabetes_boost_trainingsize.png
+INPUT ./diabetes/diabetes_boost_trainingsize.png
+INPUT mushrooms/mushroom_svm_trainingsize.png
+INPUT ./mushrooms/mushroom_svm_trainingsize.png
+INPUT ./mushrooms/mushroom_svm_trainingsize.png
+INPUT ./mushrooms/mushroom_svm_trainingsize.png
+INPUT ./mushrooms/mushroom_svm_trainingsize.png
+INPUT diabetes/diabetes_svm_trainingsize.png
+INPUT ./diabetes/diabetes_svm_trainingsize.png
+INPUT ./diabetes/diabetes_svm_trainingsize.png
+INPUT ./diabetes/diabetes_svm_trainingsize.png
+INPUT ./diabetes/diabetes_svm_trainingsize.png
+INPUT mushrooms/mushroom_knn_trainingsize.png
+INPUT ./mushrooms/mushroom_knn_trainingsize.png
+INPUT ./mushrooms/mushroom_knn_trainingsize.png
+INPUT ./mushrooms/mushroom_knn_trainingsize.png
+INPUT ./mushrooms/mushroom_knn_trainingsize.png
+INPUT diabetes/diabetes_knn_trainingsize.png
+INPUT ./diabetes/diabetes_knn_trainingsize.png
+INPUT ./diabetes/diabetes_knn_trainingsize.png
+INPUT ./diabetes/diabetes_knn_trainingsize.png
+INPUT ./diabetes/diabetes_knn_trainingsize.png
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr8.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr6.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm
@@ -115,38 +167,10 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsb.fd
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT mushrooms/mushroom_dt_trainingsize.png
-INPUT ./mushrooms/mushroom_dt_trainingsize.png
-OUTPUT aramaswami32-analysis.pdf
-INPUT ./mushrooms/mushroom_dt_trainingsize.png
-INPUT ./mushrooms/mushroom_dt_trainingsize.png
-INPUT ./mushrooms/mushroom_dt_trainingsize.png
-INPUT C:/Users/arvin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
-INPUT mushrooms/mushroom_boost_trainingsize.png
-INPUT ./mushrooms/mushroom_boost_trainingsize.png
-INPUT ./mushrooms/mushroom_boost_trainingsize.png
-INPUT ./mushrooms/mushroom_boost_trainingsize.png
-INPUT ./mushrooms/mushroom_boost_trainingsize.png
-INPUT mushrooms/mushroom_svm_trainingsize.png
-INPUT ./mushrooms/mushroom_svm_trainingsize.png
-INPUT ./mushrooms/mushroom_svm_trainingsize.png
-INPUT ./mushrooms/mushroom_svm_trainingsize.png
-INPUT ./mushrooms/mushroom_svm_trainingsize.png
-INPUT mushrooms/mushroom_knn_trainingsize.png
-INPUT ./mushrooms/mushroom_knn_trainingsize.png
-INPUT ./mushrooms/mushroom_knn_trainingsize.png
-INPUT ./mushrooms/mushroom_knn_trainingsize.png
-INPUT ./mushrooms/mushroom_knn_trainingsize.png
 INPUT aramaswami32-analysis.aux
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb

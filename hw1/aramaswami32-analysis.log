@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.21)  24 SEP 2018 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.21)  25 SEP 2018 08:37
 entering extended mode
 **c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex
 (c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex
@@ -341,49 +341,21 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \c@lstlisting=\count126
-
-c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex:52: Missing $ inserted
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 52.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 52.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex:53: Missing $ inserted
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex:54: Missing $ inserted
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex:55: Missing $ inserted
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex:56: Missing $ inserted
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex:57: Missing $ inserted
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 <mushrooms/mushroom_dt_trainingsize.png, id=1, 462.528pt x 346.896pt>
 File: mushrooms/mushroom_dt_trainingsize.png Graphic file (type png)
 <use mushrooms/mushroom_dt_trainingsize.png>
 Package pdftex.def Info: mushrooms/mushroom_dt_trainingsize.png  used on input 
-line 115.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+line 71.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+<diabetes/diabetes_dt_trainingsize.png, id=3, 462.528pt x 346.896pt>
+File: diabetes/diabetes_dt_trainingsize.png Graphic file (type png)
+<use diabetes/diabetes_dt_trainingsize.png>
+Package pdftex.def Info: diabetes/diabetes_dt_trainingsize.png  used on input l
+ine 72.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 
-Overfull \hbox (111.9005pt too wide) in paragraph at lines 114--116
-[]\OT1/cmr/m/n/10.95 Here are the plots: [] 
+Overfull \hbox (17.20012pt too wide) in paragraph at lines 71--73
+[][] [] 
  []
 
 
@@ -395,60 +367,105 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{C:/Users/arvin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
+<mushrooms/mushroom_nn_trainingsize.png, id=10, 462.528pt x 346.896pt>
+File: mushrooms/mushroom_nn_trainingsize.png Graphic file (type png)
+<use mushrooms/mushroom_nn_trainingsize.png>
+Package pdftex.def Info: mushrooms/mushroom_nn_trainingsize.png  used on input 
+line 76.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+<diabetes/diabetes_nn_trainingsize.png, id=11, 462.528pt x 346.896pt>
+File: diabetes/diabetes_nn_trainingsize.png Graphic file (type png)
+<use diabetes/diabetes_nn_trainingsize.png>
+Package pdftex.def Info: diabetes/diabetes_nn_trainingsize.png  used on input l
+ine 77.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+
+Overfull \hbox (17.20012pt too wide) in paragraph at lines 76--78
+[] [] 
+ []
+
 <mushrooms/mushroom_boost_trainingsize.png, id=12, 462.528pt x 346.896pt>
 File: mushrooms/mushroom_boost_trainingsize.png Graphic file (type png)
 <use mushrooms/mushroom_boost_trainingsize.png>
 Package pdftex.def Info: mushrooms/mushroom_boost_trainingsize.png  used on inp
-ut line 125.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+ut line 86.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+<diabetes/diabetes_boost_trainingsize.png, id=13, 462.528pt x 346.896pt>
+File: diabetes/diabetes_boost_trainingsize.png Graphic file (type png)
+<use diabetes/diabetes_boost_trainingsize.png>
+Package pdftex.def Info: diabetes/diabetes_boost_trainingsize.png  used on inpu
+t line 87.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 
-Overfull \hbox (199.2877pt too wide) in paragraph at lines 124--126
-[]\OT1/cmr/m/n/10.95 Here are the plots taken for boost-ing: [] 
+Overfull \hbox (17.20012pt too wide) in paragraph at lines 86--88
+[][] [] 
  []
 
-[2 <./mushrooms/mushroom_dt_trainingsize.png>]
-<mushrooms/mushroom_svm_trainingsize.png, id=17, 462.528pt x 346.896pt>
+[2 <./mushrooms/mushroom_dt_trainingsize.png> <./diabetes/diabetes_dt_trainings
+ize.png> <./mushrooms/mushroom_nn_trainingsize.png> <./diabetes/diabetes_nn_tra
+iningsize.png>]
+<mushrooms/mushroom_svm_trainingsize.png, id=21, 462.528pt x 346.896pt>
 File: mushrooms/mushroom_svm_trainingsize.png Graphic file (type png)
 <use mushrooms/mushroom_svm_trainingsize.png>
 Package pdftex.def Info: mushrooms/mushroom_svm_trainingsize.png  used on input
- line 131.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+ line 94.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+<diabetes/diabetes_svm_trainingsize.png, id=22, 462.528pt x 346.896pt>
+File: diabetes/diabetes_svm_trainingsize.png Graphic file (type png)
+<use diabetes/diabetes_svm_trainingsize.png>
+Package pdftex.def Info: diabetes/diabetes_svm_trainingsize.png  used on input 
+line 95.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 
-Overfull \hbox (179.45476pt too wide) in paragraph at lines 130--132
-[]\OT1/cmr/m/n/10.95 The SVM plots are shown be-low: [] 
+Overfull \hbox (17.20012pt too wide) in paragraph at lines 94--96
+[][] [] 
  []
 
-[3 <./mushrooms/mushroom_boost_trainingsize.png>]
-<mushrooms/mushroom_knn_trainingsize.png, id=22, 462.528pt x 346.896pt>
+<mushrooms/mushroom_knn_trainingsize.png, id=23, 462.528pt x 346.896pt>
 File: mushrooms/mushroom_knn_trainingsize.png Graphic file (type png)
 <use mushrooms/mushroom_knn_trainingsize.png>
 Package pdftex.def Info: mushrooms/mushroom_knn_trainingsize.png  used on input
- line 137.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+ line 102.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+<diabetes/diabetes_knn_trainingsize.png, id=24, 462.528pt x 346.896pt>
+File: diabetes/diabetes_knn_trainingsize.png Graphic file (type png)
+<use diabetes/diabetes_knn_trainingsize.png>
+Package pdftex.def Info: diabetes/diabetes_knn_trainingsize.png  used on input 
+line 103.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 
-Overfull \hbox (139.27434pt too wide) in paragraph at lines 136--138
-[]\OT1/cmr/m/n/10.95 Here are the KNN plots: [] 
+Overfull \hbox (17.20012pt too wide) in paragraph at lines 102--104
+[][] [] 
  []
 
-[4 <./mushrooms/mushroom_svm_trainingsize.png>] [5 <./mushrooms/mushroom_knn_tr
-ainingsize.png>] [6] (aramaswami32-analysis.aux) ) 
+[3 <./mushrooms/mushroom_boost_trainingsize.png> <./diabetes/diabetes_boost_tra
+iningsize.png> <./mushrooms/mushroom_svm_trainingsize.png> <./diabetes/diabetes
+_svm_trainingsize.png>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 113.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 113.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [4 <./mushrooms/mushroom_knn_trainingsize.png> <./diabetes/diabetes_knn_train
+ingsize.png>]
+(aramaswami32-analysis.aux) ) 
 Here is how much of TeX's memory you used:
- 4925 strings out of 493307
- 69864 string characters out of 3138822
+ 4956 strings out of 493307
+ 71072 string characters out of 3138822
  141192 words of memory out of 3000000
- 8397 multiletter control sequences out of 15000+200000
+ 8421 multiletter control sequences out of 15000+200000
  9498 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,43p,403b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on aramaswami32-analysis.pdf (6 pages, 229333 bytes).
+ 41i,11n,43p,403b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pf
+b>
+Output written on aramaswami32-analysis.pdf (4 pages, 383639 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
+ 48 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

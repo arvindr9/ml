@@ -22,10 +22,6 @@ train_performance = []
 val_performance = []
 test_performance = []
 
-# for evaluating over time
-train_loss = []
-val_loss = []
-test_loss = []
 
 features = None
 encodings = None

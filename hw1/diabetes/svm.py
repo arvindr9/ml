@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # from id3 import Id3Estimator, export_graphviz
 import csv
 
-file = open('../data/mushroom-classification/mushrooms.csv')
+file = open('../data/pima-indians-diabetes-database/diabetes.csv')
 
 # clf = Id3Estimator(max_depth = 10)
 
@@ -19,7 +19,7 @@ test_frac = 0.2
 
 kernel_funcs = ['linear', 'rbf']
 
-train_fracs = [0.0005, 0.006, 0.008, 0.001, 0.002, 0.005, 0.008, 0.01, 0.02, 0.05, 0.1, 0.2, 0.4, 0.6]
+train_fracs = [0.005, 0.008, 0.01, 0.02, 0.05, 0.1, 0.2, 0.4, 0.6]
 
 # for evaluating against train size
 train_performance = []
@@ -35,10 +35,7 @@ for train_frac in train_fracs:
     clfs = []
     for kernel in kernel_funcs:
         clf = SVC(kernel = kernel)
-        if kernel == kernel_funcs[0] and train_frac == train_fracs[0]:
-            features, encodings, ((x_train, y_train), (x_val, y_val), (x_test, y_test)) = process(all_data, train_frac, val_frac, test_frac, modify = True)
-        else:
-            _, _, ((x_train, y_train), (x_val, y_val), (x_test, y_test)) = process(all_data, train_frac, val_frac, test_frac, features = features, encodings = encodings)
+        (x_train, y_train), (x_val, y_val), (x_test, y_test) = process(all_data, train_frac, val_frac, test_frac)
         print(x_train.shape, y_train.shape)
         clf.fit(x_train, y_train)
         clfs.append(clf)
@@ -69,22 +66,23 @@ plt.plot(train_sizes, train_performance)
 plt.plot(train_sizes, val_performance)
 plt.plot(train_sizes, test_performance)
 plt.legend(["Train", "Validation", "Test"])
-plt.title("Mushrooms: SVM performance")
+plt.title("Diabetes: SVM performance")
 plt.xlabel("Training size")
 plt.ylabel("Accuracy")
-plt.savefig('mushroom_svm_trainingsize.png')
+plt.savefig('diabetes_svm_trainingsize.png')
 
 train_frac = 0.6
 
 max_iterations = [10, 50, 100, 200, 300, 500, 1000, 2000]
 
-# for evaluating over time
+#For evaluating against time
 train_performance = []
 val_performance = []
 test_performance = []
 
+
 for max_iter in max_iterations:
-    _, _, ((x_train, y_train), (x_val, y_val), (x_test, y_test)) = process(all_data, train_frac, val_frac, test_frac, features = features, encodings = encodings)
+    (x_train, y_train), (x_val, y_val), (x_test, y_test) = process(all_data, train_frac, val_frac, test_frac)
     clf = SVC(max_iter = max_iter)
     clf.fit(x_train, y_train)
     train_performance.append(accuracy_score(clf.predict(x_train), y_train))
@@ -97,7 +95,7 @@ plt.plot(max_iterations, train_performance)
 plt.plot(max_iterations, val_performance)
 plt.plot(max_iterations, test_performance)
 plt.legend(["Train", "Validation", "Test"])
-plt.title("Mushrooms: SVM performance vs iterations")
+plt.title("Diabetes: SVM performance vs iterations")
 plt.xlabel("Max iterations")
 plt.ylabel("Accuracy")
-plt.savefig('mushroom_svm_iterations.png')
+plt.savefig('diabetes_svm_iterations.png')
