@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.21)  25 SEP 2018 08:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.21)  25 SEP 2018 09:15
 entering extended mode
 **c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex
 (c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex
@@ -396,79 +396,117 @@ Overfull \hbox (17.20012pt too wide) in paragraph at lines 87--89
 
 [2 <./mushrooms/mushroom_dt_trainingsize.png> <./diabetes/diabetes_dt_trainings
 ize.png>]
-<mushrooms/mushroom_boost_trainingsize.png, id=18, 462.528pt x 346.896pt>
+<mushrooms/mushroom_nn_iterations.png, id=18, 462.528pt x 346.896pt>
+File: mushrooms/mushroom_nn_iterations.png Graphic file (type png)
+<use mushrooms/mushroom_nn_iterations.png>
+Package pdftex.def Info: mushrooms/mushroom_nn_iterations.png  used on input li
+ne 92.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+<diabetes/diabetes_nn_iterations.png, id=19, 462.528pt x 346.896pt>
+File: diabetes/diabetes_nn_iterations.png Graphic file (type png)
+<use diabetes/diabetes_nn_iterations.png>
+Package pdftex.def Info: diabetes/diabetes_nn_iterations.png  used on input lin
+e 93.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+
+Overfull \hbox (17.20012pt too wide) in paragraph at lines 92--94
+[][] [] 
+ []
+
+<mushrooms/mushroom_boost_trainingsize.png, id=20, 462.528pt x 346.896pt>
 File: mushrooms/mushroom_boost_trainingsize.png Graphic file (type png)
 <use mushrooms/mushroom_boost_trainingsize.png>
 Package pdftex.def Info: mushrooms/mushroom_boost_trainingsize.png  used on inp
-ut line 97.
+ut line 102.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-<diabetes/diabetes_boost_trainingsize.png, id=19, 462.528pt x 346.896pt>
+<diabetes/diabetes_boost_trainingsize.png, id=21, 462.528pt x 346.896pt>
 File: diabetes/diabetes_boost_trainingsize.png Graphic file (type png)
 <use diabetes/diabetes_boost_trainingsize.png>
 Package pdftex.def Info: diabetes/diabetes_boost_trainingsize.png  used on inpu
-t line 98.
+t line 103.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 
-Overfull \hbox (17.20012pt too wide) in paragraph at lines 97--99
+Overfull \hbox (17.20012pt too wide) in paragraph at lines 102--104
 [][] [] 
  []
 
 [3 <./mushrooms/mushroom_nn_trainingsize.png> <./diabetes/diabetes_nn_trainings
-ize.png> <./mushrooms/mushroom_boost_trainingsize.png> <./diabetes/diabetes_boo
-st_trainingsize.png>]
-<mushrooms/mushroom_svm_trainingsize.png, id=27, 462.528pt x 346.896pt>
+ize.png> <./mushrooms/mushroom_nn_iterations.png> <./diabetes/diabetes_nn_itera
+tions.png>]
+<mushrooms/mushroom_svm_trainingsize.png, id=29, 462.528pt x 346.896pt>
 File: mushrooms/mushroom_svm_trainingsize.png Graphic file (type png)
 <use mushrooms/mushroom_svm_trainingsize.png>
 Package pdftex.def Info: mushrooms/mushroom_svm_trainingsize.png  used on input
- line 105.
+ line 110.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-<diabetes/diabetes_svm_trainingsize.png, id=28, 462.528pt x 346.896pt>
+<diabetes/diabetes_svm_trainingsize.png, id=30, 462.528pt x 346.896pt>
 File: diabetes/diabetes_svm_trainingsize.png Graphic file (type png)
 <use diabetes/diabetes_svm_trainingsize.png>
 Package pdftex.def Info: diabetes/diabetes_svm_trainingsize.png  used on input 
-line 106.
+line 111.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 
-Overfull \hbox (17.20012pt too wide) in paragraph at lines 105--107
+Overfull \hbox (17.20012pt too wide) in paragraph at lines 110--112
 [][] [] 
  []
 
-<mushrooms/mushroom_knn_trainingsize.png, id=29, 462.528pt x 346.896pt>
+<mushrooms/mushroom_svm_iterations.png, id=31, 462.528pt x 346.896pt>
+File: mushrooms/mushroom_svm_iterations.png Graphic file (type png)
+<use mushrooms/mushroom_svm_iterations.png>
+Package pdftex.def Info: mushrooms/mushroom_svm_iterations.png  used on input l
+ine 115.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+<diabetes/diabetes_svm_iterations.png, id=32, 462.528pt x 346.896pt>
+File: diabetes/diabetes_svm_iterations.png Graphic file (type png)
+<use diabetes/diabetes_svm_iterations.png>
+Package pdftex.def Info: diabetes/diabetes_svm_iterations.png  used on input li
+ne 116.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+
+Overfull \hbox (17.20012pt too wide) in paragraph at lines 115--117
+[][] [] 
+ []
+
+[4 <./mushrooms/mushroom_boost_trainingsize.png> <./diabetes/diabetes_boost_tra
+iningsize.png> <./mushrooms/mushroom_svm_trainingsize.png> <./diabetes/diabetes
+_svm_trainingsize.png>]
+<mushrooms/mushroom_knn_trainingsize.png, id=40, 462.528pt x 346.896pt>
 File: mushrooms/mushroom_knn_trainingsize.png Graphic file (type png)
 <use mushrooms/mushroom_knn_trainingsize.png>
 Package pdftex.def Info: mushrooms/mushroom_knn_trainingsize.png  used on input
- line 113.
+ line 123.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-<diabetes/diabetes_knn_trainingsize.png, id=30, 462.528pt x 346.896pt>
+<diabetes/diabetes_knn_trainingsize.png, id=41, 462.528pt x 346.896pt>
 File: diabetes/diabetes_knn_trainingsize.png Graphic file (type png)
 <use diabetes/diabetes_knn_trainingsize.png>
 Package pdftex.def Info: diabetes/diabetes_knn_trainingsize.png  used on input 
-line 114.
+line 124.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
 
-Overfull \hbox (17.20012pt too wide) in paragraph at lines 113--115
+Overfull \hbox (17.20012pt too wide) in paragraph at lines 123--125
 [][] [] 
  []
 
-[4 <./mushrooms/mushroom_svm_trainingsize.png> <./diabetes/diabetes_svm_trainin
-gsize.png> <./mushrooms/mushroom_knn_trainingsize.png> <./diabetes/diabetes_knn
-_trainingsize.png>] [5] (aramaswami32-analysis.aux) ) 
+[5 <./mushrooms/mushroom_svm_iterations.png> <./diabetes/diabetes_svm_iteration
+s.png> <./mushrooms/mushroom_knn_trainingsize.png> <./diabetes/diabetes_knn_tra
+iningsize.png>] [6] [7] (aramaswami32-analysis.aux) ) 
 Here is how much of TeX's memory you used:
- 4957 strings out of 493307
- 71090 string characters out of 3138822
+ 4977 strings out of 493307
+ 71848 string characters out of 3138822
  142192 words of memory out of 3000000
- 8422 multiletter control sequences out of 15000+200000
+ 8438 multiletter control sequences out of 15000+200000
  9498 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,43p,947b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb>
-Output written on aramaswami32-analysis.pdf (5 pages, 395024 bytes).
+/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+msy10.pfb>
+Output written on aramaswami32-analysis.pdf (7 pages, 509806 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
+ 75 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

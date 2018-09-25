@@ -137,6 +137,16 @@ INPUT ./diabetes/diabetes_nn_trainingsize.png
 INPUT ./diabetes/diabetes_nn_trainingsize.png
 INPUT ./diabetes/diabetes_nn_trainingsize.png
 INPUT ./diabetes/diabetes_nn_trainingsize.png
+INPUT mushrooms/mushroom_nn_iterations.png
+INPUT ./mushrooms/mushroom_nn_iterations.png
+INPUT ./mushrooms/mushroom_nn_iterations.png
+INPUT ./mushrooms/mushroom_nn_iterations.png
+INPUT ./mushrooms/mushroom_nn_iterations.png
+INPUT diabetes/diabetes_nn_iterations.png
+INPUT ./diabetes/diabetes_nn_iterations.png
+INPUT ./diabetes/diabetes_nn_iterations.png
+INPUT ./diabetes/diabetes_nn_iterations.png
+INPUT ./diabetes/diabetes_nn_iterations.png
 INPUT mushrooms/mushroom_boost_trainingsize.png
 INPUT ./mushrooms/mushroom_boost_trainingsize.png
 INPUT ./mushrooms/mushroom_boost_trainingsize.png
@@ -157,6 +167,16 @@ INPUT ./diabetes/diabetes_svm_trainingsize.png
 INPUT ./diabetes/diabetes_svm_trainingsize.png
 INPUT ./diabetes/diabetes_svm_trainingsize.png
 INPUT ./diabetes/diabetes_svm_trainingsize.png
+INPUT mushrooms/mushroom_svm_iterations.png
+INPUT ./mushrooms/mushroom_svm_iterations.png
+INPUT ./mushrooms/mushroom_svm_iterations.png
+INPUT ./mushrooms/mushroom_svm_iterations.png
+INPUT ./mushrooms/mushroom_svm_iterations.png
+INPUT diabetes/diabetes_svm_iterations.png
+INPUT ./diabetes/diabetes_svm_iterations.png
+INPUT ./diabetes/diabetes_svm_iterations.png
+INPUT ./diabetes/diabetes_svm_iterations.png
+INPUT ./diabetes/diabetes_svm_iterations.png
 INPUT mushrooms/mushroom_knn_trainingsize.png
 INPUT ./mushrooms/mushroom_knn_trainingsize.png
 INPUT ./mushrooms/mushroom_knn_trainingsize.png
@@ -170,6 +190,8 @@ INPUT ./diabetes/diabetes_knn_trainingsize.png
 INPUT aramaswami32-analysis.aux
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb

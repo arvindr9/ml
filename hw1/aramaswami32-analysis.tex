@@ -87,6 +87,11 @@
         \includegraphics[width=8cm]{mushrooms/mushroom_nn_trainingsize.png}
         \includegraphics[width=8cm]{diabetes/diabetes_nn_trainingsize.png}
 
+        Here are plots that represent the accuracy with respect to the number of iterations(done with the default sklearn parameters of 1 layer with 100 hidden units):
+
+        \includegraphics[width=8cm]{mushrooms/mushroom_nn_iterations.png}
+        \includegraphics[width=8cm]{diabetes/diabetes_nn_iterations.png}
+
         \subsection{Boosting}
         The experiments in this project used an AdaBoost classifier with a base estimator of decision trees.
         The max depth of the decision trees (for sake of pruning) and the number of trees (base estimators)
@@ -105,6 +110,11 @@
         \includegraphics[width=8cm]{mushrooms/mushroom_svm_trainingsize.png}
         \includegraphics[width=8cm]{diabetes/diabetes_svm_trainingsize.png}
 
+        Here are plots that represent the accuracy with respect to the number of iterations (also done with sklearn's default parameters):
+
+        \includegraphics[width=8cm]{mushrooms/mushroom_svm_iterations.png}
+        \includegraphics[width=8cm]{diabetes/diabetes_svm_iterations.png}
+
         \subsection{k-Nearest Neighbors}
         The KNN classifiers were tested with varying K values.
 
@@ -119,7 +129,7 @@
 
         The accuracy levels for all the classifiers were relatively low for the Diabetes dataset. This could have been due to the relatively small amount of data (768 samples for this dataset versus 8,124 for the Mushroom dataset). Also, more hyperparameter tuning could potentially give better results in this dataset (most of the classifiers involved the tuning of 1 hyperparameter for the sake of efficiency, but given plenty of time, one could use a grid search algorithm with several hyperparameters to find the optimal combination). One trend that is promising, though, is that the accuracy for the training, validation, and test data sharply increase when the last bit of data is added for the boosted and regular decision trees. This leads to the possibility that those two classifiers have a working set of hyperparameters and could give robust results if given more data points.
 
-        For the mushrooms dataset, all the classifiers had accurate performance in the validation and test set when trained with at least 1000 data points. This is because the data was plenty, so even if the model was complex, the large amount of data reduced the error due to variance and allowed the trained data to better generalize to new data.
+        For the mushrooms dataset, all the classifiers had accurate performance in the validation and test set when trained with at least 1000 data points. This is because the data was plenty, so even if the model was complex, the large amount of data reduced the error due to variance and allowed the trained data to better generalize to new data. While all models performed well when the amount of data was high, there were insight-providing differences in their performances with less data, which will be discussed below.
 
 
         \subsection{Decision Trees}
@@ -133,15 +143,34 @@
 
         \subsection{Neural Networks}
 
+        The neural networks had very low variance for both datasets.
+        A wide range of layers was picked ($[(10,), (5, 10, 5,), (5, 10, 10, 5), (5, 10, 10, 10, 5,)]$),
+        so the one with the best results must have been a relatively simple model such as
+        the model with one hidden layer of size $10$, allowing the variance to be low.
 
         \subsection{Boosting}
 
-        
+        Boosting produced much better results than the decision trees. In the cases with less data, the decision
+        tree had some overfitting (for example, the validation and testing accuracy would be around 70 percent),
+        but boosting, which was designed to overcome this issue of overfitting, resulted in validation
+        and testing accuracies of 96 - 97 percent.
+
         \subsection{Support Vector Machines}
 
+        The support vector machine has a complex model, so more data is needed to provide a high accuracy for it. We can see from the plot in the mushrooms dataset
+        that the SVM has a high training accuracy but low validation and testing accuracy for small amounts of data, so more training examples helps to increase the
+        validation and testing accuracy. The overfitting can definitely be
+        seen in the diabetes accuracy plot, where the training accuracy
+        stays around 1.0, while the validation and testing accuracies have low values around 0.2.
+        
+        A method that could have been used to
+        fix the issue of overfitting could have been altering the value of the regularization hyperparameter $C$,
+        but this could potentially be computationally intensive, since it would involve grid
+        searching on multiple parameters with a computationally expensive model.
 
         \subsection{k-Nearest Neighbors}
 
-        
+        There was not much of an overfitting problem for this algorithm; there was
+        very low variance in the mushrooms dataset.
 
     \end{document}
