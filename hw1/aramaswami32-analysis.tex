@@ -63,6 +63,13 @@
         
         \section{Results}
 
+        The data was split into a training set, validation set, and testing set. The validation set consisted of 10% of the entire dataset, and the testing set consisted of 60% of the entire testing set. Below are plots that resulted from the scripts that were run.
+
+    The training set size was varied, and for each training set size, the hyperparameters were those such that the accuracy on the validation set was maximized (For example, for a training set of size 5000, if the accuracy on the validation set of the decision tree was the highest when the max depth was 10 as opposed to max depths of 1, 2, 5 or 20, then the plotted accuracy for a training set of size 5000 would represent that of a max depth of 10).
+
+    For iterative algorithms (The SVM and neural network), plots after certain numbers of iterations are included (this was done by testing multiple restrictions on the maximum number of iterations of the algorithm $--$ the max$\_$iter parameter in sklearn).
+
+
         \subsection{Decision Trees}
         The pruning used for the decision trees was caused by setting a limit on the maximum depth.
 
@@ -73,6 +80,10 @@
 
         \subsection{Neural Networks}
 
+        Neural networks were tested with multiple combinations of layers.
+
+        Below are the plots:
+
         \includegraphics[width=8cm]{mushrooms/mushroom_nn_trainingsize.png}
         \includegraphics[width=8cm]{diabetes/diabetes_nn_trainingsize.png}
 
@@ -82,7 +93,7 @@
         in the boosted classifier were varied.
 
         Here are the plots taken for boosting:
-        
+
         \includegraphics[width=8cm]{mushrooms/mushroom_boost_trainingsize.png}
         \includegraphics[width=8cm]{diabetes/diabetes_boost_trainingsize.png}
 
@@ -104,6 +115,13 @@
 
         \section{Analysis}
 
+        Although the datasets had nontrivial sizes (over 700 samples for the diabetes dataset and over 8000 samples for the mushrooms dataset), all the algorithms still ran relatively quickly (each script, which ran some algorithm several times, ran within 1 minute). However, the SVM and neural network relatively took more time than the rest because of their complex architectures. Also, the boosted decision tree relatively took more time since there were two hyperparameters being varied: number of estimators and max depth; the rest of the classifiers had only one hyperparameter varied.
+
+        The accuracy levels for all the classifiers were relatively low for the Diabetes dataset. This could have been due to the relatively small amount of data (768 samples for this dataset versus 8,124 for the Mushroom dataset). Also, more hyperparameter tuning could potentially give better results in this dataset (most of the classifiers involved the tuning of 1 hyperparameter for the sake of efficiency, but given plenty of time, one could use a grid search algorithm with several hyperparameters to find the optimal combination). One trend that is promising, though, is that the accuracy for the training, validation, and test data sharply increase when the last bit of data is added for the boosted and regular decision trees. This leads to the possibility that those two classifiers have a working set of hyperparameters and could give robust results if given more data points.
+
+        For the mushrooms dataset, all the classifiers had accurate performance in the validation and test set when trained with at least 1000 data points. This is because the data was plenty, so even if the model was complex, the large amount of data reduced the error due to variance and allowed the trained data to better generalize to new data.
+
+
         \subsection{Decision Trees}
 
 
@@ -114,9 +132,7 @@
         pattern of a decision trees.
 
         \subsection{Neural Networks}
-        Neural networks were tested with multiple combinations of layers.
 
-        Below are the plots:
 
         \subsection{Boosting}
 

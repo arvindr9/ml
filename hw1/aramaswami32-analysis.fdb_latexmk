@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1537879033 "c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex" "aramaswami32-analysis.pdf" "aramaswami32-analysis" 1537879035
+["pdflatex"] 1537879978 "c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex" "aramaswami32-analysis.pdf" "aramaswami32-analysis" 1537879980
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -21,6 +21,7 @@
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
+  "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Program Files/MiKTeX 2.9/tex/context/base/supp-pdf.mkii" 1306918461 71592 fe353e1fbd982ffc647f3e98ff74da96 ""
   "C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/etexcmds.sty" 1489934424 7612 729a8cc22a1ee0029997c7f74717ae05 ""
   "C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifluatex.sty" 1489934424 7324 2310d1247db0114eb4726807c8837a0e ""
@@ -67,9 +68,9 @@
   "C:/Program Files/MiKTeX 2.9/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/arvin/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1516569361 4062055 802770c7e37e204a803c7bbb7498ee22 ""
   "C:/Users/arvin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1516567009 80423 3cfba73105275d3ad410701d89fbdf7a ""
-  "aramaswami32-analysis.aux" 1537879035 1316 2f6acb6aa68852f0fe055653f98f2d19 ""
-  "aramaswami32-analysis.tex" 1537879033 5288 56b3a2a8e7fd5b7bcdb4e7d461ba2274 ""
-  "c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex" 1537879033 5288 56b3a2a8e7fd5b7bcdb4e7d461ba2274 ""
+  "aramaswami32-analysis.aux" 1537879979 1316 a605504b77443b4991cb8698d976db3c ""
+  "aramaswami32-analysis.tex" 1537879975 8115 9c5dd6b19a23ce14ec263f8dacd42ea8 ""
+  "c:/Users/arvin/Desktop/ml/hw1/aramaswami32-analysis.tex" 1537879975 8115 9c5dd6b19a23ce14ec263f8dacd42ea8 ""
   "diabetes/diabetes_boost_trainingsize.png" 1537875696 46113 962c86c4ac4d1d33d6804fd35afb0a2f ""
   "diabetes/diabetes_dt_trainingsize.png" 1537875027 43131 8bbaf08fdcc6aa5c4b62e8c5e94c0859 ""
   "diabetes/diabetes_knn_trainingsize.png" 1537875895 31396 4bb9db866c0ef3778be63fab46c7baeb ""
