@@ -13,7 +13,7 @@ def climb(colors, k, edges, fitness, out_iter = 10, in_iter = 100, n_sample = 10
             for sample in range(n_sample):
                 colors3 = copy.deepcopy(colors2)
                 randomi = random.randint(0, len(colors3) - 1)
-                randomc = random.randint(0, 1)
+                randomc = random.randint(1, k)
                 colors3[randomi] = randomc
                 score = fitness(colors3)
                 if score < minScore:

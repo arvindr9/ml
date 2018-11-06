@@ -59,20 +59,25 @@ clf.coefs_ = []
 clf.intercepts_ = []
 #anneal(clf, hid_layers, x_train, y_train) #uses simulated annealing to find the optimal weights
 anneal = NNAnneal(clf, hid_layers, x_train, y_train)
-anneal.steps = 5000
 ([clf.coefs_, clf.intercepts_]), e = anneal.anneal()
 
-acc_anneal.append(accuracy_score(clf.predict(x_val), y_val))
-test_anneal.append(accuracy_score(clf.predict(x_test), y_test))
+print(accuracy_score(clf.predict(x_train), y_train))
+print(accuracy_score(clf.predict(x_val), y_val))
+print(accuracy_score(clf.predict(x_test), y_test))
+# acc_anneal.append(accuracy_score(clf.predict(x_val), y_val))
+# test_anneal.append(accuracy_score(clf.predict(x_test), y_test))
 
-print(acc_anneal)
-print(test_anneal)
+# print(acc_anneal)
+# print(test_anneal)
 
 print("Hill climbing:")
 clf.coefs_ = []
 clf.intercepts_ = []
 
 climb(clf, hid_layers, x_train, y_train)
+print(accuracy_score(clf.predict(x_train), y_train))
+print(accuracy_score(clf.predict(x_val), y_val))
+print(accuracy_score(clf.predict(x_test), y_test))
 
 print("Genetic algorithm:")
 clf.coefs_ = []

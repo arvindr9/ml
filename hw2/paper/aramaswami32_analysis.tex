@@ -68,7 +68,7 @@
             K-color is a problem that attempts to find a coloring for
             a graph $G(V, E)$ such that the number of edges that have
             two vertices of the same color is minimized. K-color
-            attempts to minimize the evaluation function
+            attempts to minimize the evaluation function (from [3]):
 
             \[
                  \sum_{\{u, v\} \in E} c_{uv}
@@ -107,12 +107,54 @@
 
         \section{Analysis}
 
-       
+        \subsection{Neural network}
+        The neural network had one hidden layer
+        with five neurans.
+        For this problem, hill climbing performed much better than the other two algorithms.
+        The simulated annealing algorithm produced an accuracy of 70 percent on the training set (which is slightly better
+        than guessing), while the hill-climbing algorithm produced an accuracy of 95.7 percent on the training set. The performances
+        of each of the algorithms on the test set were similar (72 percent for simulated annealing and 95 percent for the hill climbing).
 
+        \subsection{K-coloring}
+
+        This project considered the graph as a clique (where any two vertices are connected), as this forces the vertices to have
+        high degrees and in turn forces a large variation in the colors (if the vertices had low degree, not that many colors
+        would need to be changed to solve the k-color problem).
+
+        Here are the results of the costs for clique sizes of 30, 40, 50 and a k-value of 20:
+
+            \begin{tabular}{lllll}
+                        &    & GA & RHC & SA \\
+            Clique size & 30 & 46 & 40  & 46 \\
+                        & 40 & 22 & 20  & 20 \\
+                        & 50 & 84 & 80  & 82
+            \end{tabular}
+       
+        We can see from the table that hill climbing performs considerably better than the other two algorithms.
+        There are also a couple of instances where the genetic algorithm produces a higher cost than the simulated
+        annealing algorithm (for example, when the clique size is 40, the genetic algorithm produces
+        a cost of 22, while the simulated annealing algorithm produces a lower cost of 20).
+
+        \subsection{Four peaks}
+
+        In this algorithm, hill climbing perfomed much better than the other two algorithms.
+
+        From the optimization function that the four peaks problem is trying to solve, it makes
+        intuitive sense the hill climbing algorithm would work. This is because the optimization
+        function favors trailing zeros and leading 1's. The hill climbing algorithm generates 20
+        neighbors per inner iteration, so it is very likely that at least one of the neighbors will
+        have either a larger number of trailing zeros or a larger number of leading ones, leading
+        to the likely selection of a better neighbor.
+
+        In each step of simulated annealing, only one neighbor is produced, and it is not very likely that this
+        neighbor will have at least one more trailing zero or leading 1. Thus, more iterations of simulated annealing
+        would be required to produce a similar result to hill climbing.
         \section{Sources}
 
         [1] https://www.cc.gatech.edu/~isbell/tutorials/mimic-tutorial.pdf
 
         [2] https://www.kaggle.com/uciml/mushroom-classification
+
+        [3] http://cedric.cnam.fr/~porumbed/papers/EA07.pdf
 
     \end{document}

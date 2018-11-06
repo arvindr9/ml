@@ -4,9 +4,10 @@ from hill_climb import climb
 from genetic import genetic
 
 t = 4
+l = 10
 
-arr = [0 for i in range(100)]
-for i in range(2, 100, 2):
+arr = [0 for i in range(l)]
+for i in range(2, l, 2):
     arr[i] = 1
 
 def fitness(arr):
@@ -45,8 +46,8 @@ opt_arr, opt_fit = anneal.anneal()
 print(opt_arr)
 print(opt_fit)
 
-arr = [0 for i in range(100)]
-for i in range(2, 100, 2):
+arr = [0 for i in range(l)]
+for i in range(2, l, 2):
     arr[i] = 1
 
 print("Hill climbing")
@@ -55,8 +56,8 @@ opt_arr, opt_fit = climb(arr2, fitness)
 print(opt_arr)
 print(opt_fit)
 
-arr = [0 for i in range(100)]
-for i in range(2, 100, 2):
+arr = [0 for i in range(l)]
+for i in range(2, l, 2):
     arr[i] = 1
 
 print("Genetic algo:")
