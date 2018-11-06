@@ -1,11 +1,8 @@
 import numpy as np
 from scipy.optimize import differential_evolution
 
-clf = []
-x_train = []
-y_train = []
 
-def findScore(coefs, intercepts, clf, x_train, y_train):
+def findScore(coefs, intercepts):
     tmp_coef = clf.coefs_
     tmp_inter = clf.intercepts_
     clf.coefs_ = coefs
