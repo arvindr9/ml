@@ -1,10 +1,15 @@
 import copy
+from anneal import FourPeaksAnneal
+from hill_climb import climb
+from genetic import genetic
 
 t = 4
 
 arr = [0 for i in range(100)]
+for i in range(2, 100, 2):
+    arr[i] = 1
 
-def fitness(arr, t):
+def fitness(arr):
     res = 0
     n1 = 0
     n2 = 0
@@ -21,11 +26,42 @@ def fitness(arr, t):
     res += max(n1, n2)
     return res
 
-arr2 = copy.deepcopy(arr)
-anneal(arr2, t, fitness)
+def convert(arr):
+    arr2 = []
+    for i in arr:
+        arr2.append(int(round(i)))
+    return arr2
 
-arr2 = copy.deepcopy(arr)
-genetic(arr2, t, fitness)
+def fitness_gen(arr):
+    return fitness(convert(arr))
 
+
+
+
+print("Simulated annealing:")
 arr2 = copy.deepcopy(arr)
-climb(arr2, t, fitness)
+anneal = FourPeaksAnneal(arr2, fitness)
+opt_arr, opt_fit = anneal.anneal()
+print(opt_arr)
+print(opt_fit)
+
+arr = [0 for i in range(100)]
+for i in range(2, 100, 2):
+    arr[i] = 1
+
+print("Hill climbing")
+arr2 = copy.deepcopy(arr)
+opt_arr, opt_fit = climb(arr2, fitness)
+print(opt_arr)
+print(opt_fit)
+
+arr = [0 for i in range(100)]
+for i in range(2, 100, 2):
+    arr[i] = 1
+
+print("Genetic algo:")
+arr2 = copy.deepcopy(arr)
+opt_arr, opt_fit = genetic(arr2, fitness_gen)
+print(convert(opt_arr))
+print(opt_fit)
+
