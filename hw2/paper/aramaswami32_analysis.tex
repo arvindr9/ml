@@ -109,11 +109,17 @@
 
         \subsection{Neural network}
         The neural network had one hidden layer
-        with five neurans.
+        with five neurons. The Mushrooms dataset is split such that 60 percent is training data, and 10 percent is testing data.
+
         For this problem, hill climbing performed much better than the other two algorithms.
         The simulated annealing algorithm produced an accuracy of 70 percent on the training set (which is slightly better
         than guessing), while the hill-climbing algorithm produced an accuracy of 95.7 percent on the training set. The performances
         of each of the algorithms on the test set were similar (72 percent for simulated annealing and 95 percent for the hill climbing).
+
+        A potential cause for the poor performance of simulated annealing could have been that given a point in space,
+        there aren't that many neighbors for which the loss function of the neural network decreases.
+        Unlike random hill climbing and genetic algorithms, simulated annealing only generates one neighbor at
+        a time, leading to a small likelyhood of getting to a better point in space after each iteration.
 
         \subsection{K-coloring}
 
