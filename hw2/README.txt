@@ -12,3 +12,5 @@ main script (e.g. nn.py, 4peaks.py, etc..) Declares the problem and calls other 
 anneal.py: Simulated annealing algorithm
 hill_climb.py: Randomized hill-climbing algorithm
 genetic.py: Genetic algorithm
+
+Code and the dataset are also located here: https://github.com/arvindr9/ml/tree/master/hw2

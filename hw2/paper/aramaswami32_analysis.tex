@@ -100,12 +100,7 @@
                 where x is the parameter to the fitness function). Between iteration, crossover occurs to generate new points.
 
 
-
-
-        
-        \section{Results}
-
-        \section{Analysis}
+        \section{Results and Analysis}
 
         \subsection{Neural network}
         The neural network had one hidden layer
@@ -123,7 +118,7 @@
 
         \subsection{K-coloring}
 
-        This project considered the graph as a clique (where any two vertices are connected), as this forces the vertices to have
+        This project considered the graph as a complete graph (a graph where any two vertices are connected), as this forces the vertices to have
         high degrees and in turn forces a large variation in the colors (if the vertices had low degree, not that many colors
         would need to be changed to solve the k-color problem).
 
@@ -139,11 +134,22 @@
         We can see from the table that hill climbing performs considerably better than the other two algorithms.
         There are also a couple of instances where the genetic algorithm produces a higher cost than the simulated
         annealing algorithm (for example, when the clique size is 40, the genetic algorithm produces
-        a cost of 22, while the simulated annealing algorithm produces a lower cost of 20).
+        a cost of 22, while the simulated annealing algorithm produces a lower cost of 20). 
+
+        A possible reason for the good performance of simulated annealing may have been the tendency for
+        uphill moves to occur when the temperature is high. Genetic algorithms are more likely to be stuck in
+        local optima in these instances.
 
         \subsection{Four peaks}
 
         In this algorithm, hill climbing perfomed much better than the other two algorithms.
+
+        This algorithm was run on a list of 10 elements, starting with zeros and containing alternating
+        ones and zeros. The threshold in this problem was equal to 4. The hill climbing algorithm successfully
+        produced a sequence of all zeros, giving the function a value of 10. However, the
+        simulated annealing algorithm produced the sequence [1, 0, 1, 1, 1, 0, 0, 0, 1, 0],
+        while the genetic algorithm produced the sequence [1, 0, 1, 1, 0, 1, 0, 0, 1, 0],
+        which did not have very high evaluations.
 
         From the optimization function that the four peaks problem is trying to solve, it makes
         intuitive sense the hill climbing algorithm would work. This is because the optimization
@@ -155,6 +161,13 @@
         In each step of simulated annealing, only one neighbor is produced, and it is not very likely that this
         neighbor will have at least one more trailing zero or leading 1. Thus, more iterations of simulated annealing
         would be required to produce a similar result to hill climbing.
+
+        Another possible reason that the simulated annealing algorithm and genetic algorithm
+        performed badly could have been since there were not enough iterations. Also, the local
+        neighbors may have need to be chosen differently for the simulated annealing (in this
+        assignment, the local neighbors were chosen by selecting a random index in the array
+        and randomly setting it equal to 0 or 1; this worked well for hill climbing but
+        not for simulated annealing).
         \section{Sources}
 
         [1] https://www.cc.gatech.edu/~isbell/tutorials/mimic-tutorial.pdf
