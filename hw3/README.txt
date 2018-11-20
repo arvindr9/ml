@@ -15,3 +15,5 @@ Inside folder mushrooms:
 clustering1: contains initial clustering script (clustering.py)
 clustering2: contains script for clustering after PCA is performed (clustering.py)
 pca: contains script to reduce the dimensions (pca.py)
+
+Code and datasets can be found here: https://github.com/arvindr9/ml/tree/master/hw3
