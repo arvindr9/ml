@@ -94,20 +94,19 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmtt10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx10.tfm
-INPUT ../pima/clustering1/gmm_init.png
-INPUT ../pima/clustering1/gmm_init.png
 OUTPUT aramaswami32-analysis.pdf
-INPUT ../pima/clustering1/gmm_init.png
-INPUT ../pima/clustering1/gmm_init.png
-INPUT ../pima/clustering1/gmm_init.png
-INPUT ../pima/clustering1/km_init.png
-INPUT ../pima/clustering1/km_init.png
-INPUT ../pima/clustering1/km_init.png
-INPUT ../pima/clustering1/km_init.png
-INPUT ../pima/clustering1/km_init.png
 INPUT C:/Users/arvin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
+INPUT ../pima/clustering1/gmm_init.png
+INPUT ../pima/clustering1/gmm_init.png
+INPUT ../pima/clustering1/gmm_init.png
+INPUT ../pima/clustering1/gmm_init.png
+INPUT ../pima/clustering1/gmm_init.png
+INPUT ../pima/clustering1/km_init.png
+INPUT ../pima/clustering1/km_init.png
+INPUT ../pima/clustering1/km_init.png
+INPUT ../pima/clustering1/km_init.png
+INPUT ../pima/clustering1/km_init.png
 INPUT ../mushrooms/clustering1/gmm_init.png
 INPUT ../mushrooms/clustering1/gmm_init.png
 INPUT ../mushrooms/clustering1/gmm_init.png
@@ -138,16 +137,26 @@ INPUT ../pima/clustering2/km_pca.png
 INPUT ../pima/clustering2/km_pca.png
 INPUT ../pima/clustering2/km_pca.png
 INPUT ../pima/clustering2/km_pca.png
-INPUT ../pima/clustering2/cluster_gmm_pca.png
-INPUT ../pima/clustering2/cluster_gmm_pca.png
-INPUT ../pima/clustering2/cluster_gmm_pca.png
-INPUT ../pima/clustering2/cluster_gmm_pca.png
-INPUT ../pima/clustering2/cluster_gmm_pca.png
-INPUT ../pima/clustering2/cluster_km_pca.png
-INPUT ../pima/clustering2/cluster_km_pca.png
-INPUT ../pima/clustering2/cluster_km_pca.png
-INPUT ../pima/clustering2/cluster_km_pca.png
-INPUT ../pima/clustering2/cluster_km_pca.png
+INPUT ../pima/clustering2/cluster_2_gmm_pca.png
+INPUT ../pima/clustering2/cluster_2_gmm_pca.png
+INPUT ../pima/clustering2/cluster_2_gmm_pca.png
+INPUT ../pima/clustering2/cluster_2_gmm_pca.png
+INPUT ../pima/clustering2/cluster_2_gmm_pca.png
+INPUT ../pima/clustering2/cluster_2_km_pca.png
+INPUT ../pima/clustering2/cluster_2_km_pca.png
+INPUT ../pima/clustering2/cluster_2_km_pca.png
+INPUT ../pima/clustering2/cluster_2_km_pca.png
+INPUT ../pima/clustering2/cluster_2_km_pca.png
+INPUT ../pima/clustering2/cluster_4_gmm_pca.png
+INPUT ../pima/clustering2/cluster_4_gmm_pca.png
+INPUT ../pima/clustering2/cluster_4_gmm_pca.png
+INPUT ../pima/clustering2/cluster_4_gmm_pca.png
+INPUT ../pima/clustering2/cluster_4_gmm_pca.png
+INPUT ../pima/clustering2/cluster_4_km_pca.png
+INPUT ../pima/clustering2/cluster_4_km_pca.png
+INPUT ../pima/clustering2/cluster_4_km_pca.png
+INPUT ../pima/clustering2/cluster_4_km_pca.png
+INPUT ../pima/clustering2/cluster_4_km_pca.png
 INPUT ../mushrooms/clustering2/gmm_pca.png
 INPUT ../mushrooms/clustering2/gmm_pca.png
 INPUT ../mushrooms/clustering2/gmm_pca.png
@@ -173,6 +182,7 @@ INPUT ../pima/nn_pca/nn_pca.png
 INPUT ../pima/nn_pca/nn_pca.png
 INPUT ../pima/nn_pca/nn_pca.png
 INPUT ../pima/nn_pca/nn_pca.png
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmtt10.tfm
 INPUT ../pima/clustering3/gmm_acc.png
 INPUT ../pima/clustering3/gmm_acc.png
 INPUT ../pima/clustering3/gmm_acc.png

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1542717361 "c:/Users/arvin/Desktop/ml/hw3/paper/aramaswami32-analysis.tex" "aramaswami32-analysis.pdf" "aramaswami32-analysis" 1542717363
+["pdflatex"] 1542723454 "c:/Users/arvin/Desktop/ml/hw3/paper/aramaswami32-analysis.tex" "aramaswami32-analysis.pdf" "aramaswami32-analysis" 1542723456
   "../mushrooms/clustering1/gmm_init.png" 1542712745 30096 500de65b1c6158344070234d50862ea7 ""
   "../mushrooms/clustering1/km_init.png" 1542712749 28558 12f01d5950577cd6558a6c0effa0e21c ""
   "../mushrooms/clustering2/cluster_gmm_pca.png" 1542716151 39080 fe88b204bf3ec7b3fb406ff09ab9f868 ""
@@ -9,10 +9,12 @@
   "../mushrooms/pca/mushrooms_pca.png" 1542710968 54425 c0ce17ccd1776961221ef2dd05b34930 ""
   "../pima/clustering1/gmm_init.png" 1542712721 32991 7f3872b79a77c90bdb6b3e1214a810ec ""
   "../pima/clustering1/km_init.png" 1542712722 21665 69ee4aaff282a53776e773f797fa2384 ""
-  "../pima/clustering2/cluster_gmm_pca.png" 1542716161 41257 3d60a4aa7c65a783a7b563c1eae2cf11 ""
-  "../pima/clustering2/cluster_km_pca.png" 1542716160 45274 64994ba82a06587d270ea83c6b120c71 ""
-  "../pima/clustering2/gmm_pca.png" 1542716159 31020 4b7693060b9f797a860903edee5b8f42 ""
-  "../pima/clustering2/km_pca.png" 1542716160 23188 077a972ddafead91f134f764558ed3a5 ""
+  "../pima/clustering2/cluster_2_gmm_pca.png" 1542721279 41257 3d60a4aa7c65a783a7b563c1eae2cf11 ""
+  "../pima/clustering2/cluster_2_km_pca.png" 1542721279 45274 64994ba82a06587d270ea83c6b120c71 ""
+  "../pima/clustering2/cluster_4_gmm_pca.png" 1542721280 47618 8557c4f2be061aaba863dff79be3f600 ""
+  "../pima/clustering2/cluster_4_km_pca.png" 1542721279 49410 e1661aab70f4da488c6d6c2eb8821df2 ""
+  "../pima/clustering2/gmm_pca.png" 1542721278 30837 579f6f15bc6f917f9d943141878702ba ""
+  "../pima/clustering2/km_pca.png" 1542721279 23207 01a2bc9c2f74bc2b676a82bcf461cc50 ""
   "../pima/clustering3/gmm_acc.png" 1542712440 49733 1eee475cbc7254bf7d7699bd9e76b091 ""
   "../pima/clustering3/km_acc.png" 1542712445 51974 e998ef403e687d95bdc85968fa636cfe ""
   "../pima/nn_pca/nn_pca.png" 1542711630 48347 4ce45758db28221568dcbd3c5207b254 ""
@@ -70,9 +72,9 @@
   "C:/Program Files/MiKTeX 2.9/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/arvin/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1516569361 4062055 802770c7e37e204a803c7bbb7498ee22 ""
   "C:/Users/arvin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1516567009 80423 3cfba73105275d3ad410701d89fbdf7a ""
-  "aramaswami32-analysis.aux" 1542717363 1479 0bcde1e29d7bcad0bb77905eb7da3a74 ""
-  "aramaswami32-analysis.tex" 1542717357 14118 cd016ef2de092374686c2d8f3038dc6f ""
-  "c:/Users/arvin/Desktop/ml/hw3/paper/aramaswami32-analysis.tex" 1542717357 14118 cd016ef2de092374686c2d8f3038dc6f ""
+  "aramaswami32-analysis.aux" 1542723456 1785 fc3dc27b286541307195fb534bca7f9d ""
+  "aramaswami32-analysis.tex" 1542723450 19634 ed392fb8c29a858033a476c16bbec910 ""
+  "c:/Users/arvin/Desktop/ml/hw3/paper/aramaswami32-analysis.tex" 1542723450 19634 ed392fb8c29a858033a476c16bbec910 ""
   (generated)
   "aramaswami32-analysis.pdf"
   "aramaswami32-analysis.log"

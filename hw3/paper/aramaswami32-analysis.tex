@@ -39,6 +39,28 @@
             learning: PCA (Principal Component Analysis), K-means
             clustering and GMMs (Gaussian Mixture Models).
 
+            \subsection{Classification problems}
+
+            (Note: these problem descriptions are taken from the descriptions in Assignment 1).
+            \subsubsection{Pima Indians Diabetes Dataset}
+
+            This classification problem involves predicting whether or not a person has diabetes
+            based on certain features: Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age.
+            There are 768 images in the dataset.
+
+            This classification problem is interesting since it is not necessary
+            clear whether someone has diabetes given those limited features, so there
+            is not necessarily a clearly separable boundary. Running different algorithms
+            in this problem should give some insight on how to find a proper boundary for
+            such a dataset.
+
+            \subsubsection{Predicting whether mushrooms are edible}
+
+            The objective of this classification problem is to predict
+            whether or not a mushroom is edible or poisonous, based on a set
+            of given features: cap-shape, cap-surface, cap-color, bruises, odor, gill-attachment, gill-spacing, gill-size, gill-color, stalk-shape, stalk-root, stalk-surface-above-ring, stalk-surface-below-ring, stalk-color-above-ring, stalk-color-below-ring, veil-type, veil-color, ring-number, ring-type, spore-print-color, population, habitat
+            The dataset contains 8,124 data points in total.
+
             \subsection{Experiments}
             
             First, two datasets are chosen. In this experiment, the datasets are the Mushrooms
@@ -59,10 +81,8 @@
 
             Finally, the training dataset of the Pima Indians
             Diabetes dataset is clustered using the k-Means and GMM algorithms
-            and reduced to fewer dimensions using the two algorithms. In these specific experiements, the k-Means
-            algorithm reduces the data to the cluster-distance space (sklearn's \texttt{transform}
-            function), while the GMM reduces each datapoint to the probabilities
-            of the datapoint being in each cluster (sklearn's \texttt{predict\char`_proba} function).
+            and reduced to fewer dimensions using the two algorithms (as will
+            be explained in the last section). 
             Then, with the clustering algorithms used on the training set,
             the test set is also reduced to those same features. A neural network
             is then trained on the training datasets produced by the two clustering
@@ -128,15 +148,20 @@
 
             For each of the two datasets,
             the GMM and K-means clustering were both run on the training set. To determine the optimal number
-            of cluster, some form of a metric was plotted over the number of clusters. For K-means, this metric
+            of cluster, some form of a metric for cost was plotted over the number of clusters. For K-means, this metric
             was WCSS (within-cluster sums of squares), while metric for GMMs was AIC(Alkaline
             Information Criterion) and BIC(Bayesian information criterion).
+            
+            In order to have a reasonably low cost while not having too many clusters,
+            it was useful to find a part of the graph that was shaped
+            like an elbow to optimize for those two quantities as described in [4].
+
             Here are the plots generated:
 
             \subsubsection{Initial clustering: Pima Indians Diabetes dataset}
 
-            \includegraphics[width=8cm]{../pima/clustering1/gmm_init.png}
-            \includegraphics[width=8cm]{../pima/clustering1/km_init.png}
+            \includegraphics[width=7.5cm]{../pima/clustering1/gmm_init.png}
+            \includegraphics[width=7.5cm]{../pima/clustering1/km_init.png}
 
             In this dataset, a clear "elbow" can be seen at two clusters for the GMM,
             and there is a slight "elbow" at three clusters for the K-means.
@@ -151,8 +176,8 @@
 
             \subsubsection{Initial clustering: Mushrooms dataset}
 
-            \includegraphics[width=8cm]{../mushrooms/clustering1/gmm_init.png}
-            \includegraphics[width=8cm]{../mushrooms/clustering1/km_init.png}
+            \includegraphics[width=7.5cm]{../mushrooms/clustering1/gmm_init.png}
+            \includegraphics[width=7.5cm]{../mushrooms/clustering1/km_init.png}
 
             These two graphs look quite different. The plot for Gaussian Mixture
             Models has a much sharper elbow, implying that this model does much
@@ -174,7 +199,7 @@
 
             \subsubsection{PCA: Pima Indians Diabetes dataset}
 
-            \includegraphics[width=8cm]{../pima/pca/diabetes_pca.png}
+            \includegraphics[width=7.5cm]{../pima/pca/diabetes_pca.png}
 
             When considering the visualization of the data reduced to two dimensions,
             it can clearly be seen that there are two different regions, the vertical
@@ -186,7 +211,7 @@
 
             \subsubsection{PCA: Mushrooms dataset}
 
-            \includegraphics[width=8cm]{../mushrooms/pca/mushrooms_pca.png}
+            \includegraphics[width=7.5cm]{../mushrooms/pca/mushrooms_pca.png}
 
             In this two-dimensional projection of the Mushrooms dataset, we can see clear candidates for clusters.
             There are two blue regions. Also, there is an overlap of blue and red in the bottom left corner. In addition
@@ -201,8 +226,8 @@
 
             \subsubsection{Clustering after PCA: Pima Indians Diabetes dataset}
 
-            \includegraphics[width=8cm]{../pima/clustering2/gmm_pca.png}
-            \includegraphics[width=8cm]{../pima/clustering2/km_pca.png}
+            \includegraphics[width=7.5cm]{../pima/clustering2/gmm_pca.png}
+            \includegraphics[width=7.5cm]{../pima/clustering2/km_pca.png}
 
             This plot still has a slight dip at k = 6, but it is much smaller
             than the dip that was created before PCA. Still, there is not any clear
@@ -214,13 +239,26 @@
 
             Here are images of the clustering algorithms on the 2-dimensional data.
 
-            \includegraphics[width=8cm]{../pima/clustering2/cluster_gmm_pca.png}
-            \includegraphics[width=8cm]{../pima/clustering2/cluster_km_pca.png}
+            2 clusters:
+
+            \includegraphics[width=7.5cm]{../pima/clustering2/cluster_2_gmm_pca.png}
+            \includegraphics[width=7.5cm]{../pima/clustering2/cluster_2_km_pca.png}
+
+            4 clusters:
+
+            \includegraphics[width=7.5cm]{../pima/clustering2/cluster_4_gmm_pca.png}
+            \includegraphics[width=7.5cm]{../pima/clustering2/cluster_4_km_pca.png}
+
+            When the value of K (the number of clusters) is increased, the GMM model
+            seems to separate the data in a way such that it corresponds to the training labels
+            (for example, for four clusters on the GMM, the yellow cluster corresponds
+            to blue points in the scatter plot in 2.2.1, while the green cluster corresponds
+            to red points).
 
             \subsubsection{Clustering after PCA: Mushrooms dataset}
             
-            \includegraphics[width=8cm]{../mushrooms/clustering2/gmm_pca.png}
-            \includegraphics[width=8cm]{../mushrooms/clustering2/km_pca.png}
+            \includegraphics[width=7.5cm]{../mushrooms/clustering2/gmm_pca.png}
+            \includegraphics[width=7.5cm]{../mushrooms/clustering2/km_pca.png}
 
             The above two graphs seem quite similar to each other. This is unlike how
             they were before PCA, where the GMM had an elbow at a much larger number
@@ -228,8 +266,14 @@
 
             Here are images of the clustering algorithms on the 2-dimensional data.
 
-            \includegraphics[width=8cm]{../mushrooms/clustering2/cluster_gmm_pca.png}
-            \includegraphics[width=8cm]{../mushrooms/clustering2/cluster_km_pca.png}
+            \includegraphics[width=7.5cm]{../mushrooms/clustering2/cluster_gmm_pca.png}
+            \includegraphics[width=7.5cm]{../mushrooms/clustering2/cluster_km_pca.png}
+
+            The clusters in the above two images are very similar (with an exception
+            of the way the outlying points were clustered, but that is not very significant).
+            A possible reason for this could be that the Mushrooms dataset had discrete labels,
+            so there are not two many combinations of features that can occur in the input,
+            leading to clusters that are relatively easy to learn.
 
             \subsection{Training a neural network after PCA}
 
@@ -247,21 +291,66 @@
             respect to the number of principal components generated in the
             PCA algorithm:
 
-            \includegraphics[width=8cm]{../pima/nn_pca/nn_pca.png}
+            \includegraphics[width=7.5cm]{../pima/nn_pca/nn_pca.png}
+
+            As the number of dimensions increase, the training error obviously increases
+            (since we have more information about the data). From dimensions greater than or equal to four,
+            the neural network performs at least as well as the original neural network.
+
+            However, for four dimensions and onwards, the testing accuracy plateaus
+            (and even has a big 5-percent dip from 4 dimensions to 5 dimensions).
+            This may be due to a more complex input size, which makes it more
+            difficult for the neural network to generalize.
+
+
 
             \subsection{Clustering for dimensionality reduction}
 
             The Pima Indians diabetes was split into a training and testing set (60
-            percent training and 20 percent testing).
+            percent training and 20 percent testing). By the same reasoning as in the previous
+            experiment, cross validation was not necessary here.
 
             Then, the GMM and the k-Means algorithm were each used to reduce the dimensions of
-            the data for the Pima Indian Diabetes dataset. For each number of clusters,
+            the data for the Pima Indian Diabetes dataset.
+
+            In these specific experiements, the k-Means
+            algorithm reduces the data to the cluster-distance space (sklearn's \texttt{transform}
+            function), while the GMM reduces each datapoint to the probabilities
+            of the datapoint being in each cluster (sklearn's \texttt{predict\char`_proba} function).
+            
+            For each number of clusters,
             a neural network was trained to produce a mapping from the reduced data
             to labels. Here are the results for the training and testing
             accuracies:
 
-            \includegraphics[width=8cm]{../pima/clustering3/gmm_acc.png}
-            \includegraphics[width=8cm]{../pima/clustering3/km_acc.png}
+            \includegraphics[width=7.5cm]{../pima/clustering3/gmm_acc.png}
+            \includegraphics[width=7.5cm]{../pima/clustering3/km_acc.png}
+
+            It makes sense that the training and testing accuracy for two clusters is only slightly better
+            than guessing (with percentages in the sixties), as inspecting the figure
+            in section 2.2.1 can give us that each region is
+            likely to have points of either label, thus providing very little information
+            on what the label could be based on the probabilities of solely two
+            clusters.
+
+            For the GMM, we see a gradual increase in training accuracy as more and
+            more clusters are added. The lower training accuracy for fewer clusters
+            can be attributed to the loss of information when using fewer components.
+
+            However, this trend in the training accuracy is not seen in the plot for
+            the K-means algorithm. In fact, when K = 13, the training accuracy is
+            56 percent which is only slightly better than guessing a class for this
+            binary classification problem.
+
+            A possible reason for this discrepancy in the training accuracy trend was previously
+            mentioned in section 2.3.1; the GMM is better at learning the difference between the labels
+            when more clusters are added (as seen in the yellow and green cluster in the image
+            for four clusters).
+
+            As opposed to the previous neural network experiment with PCA, this experiment
+            does not have as high of a training and testing accuracy. This is probably due to
+            the loss in information when reducing it to clusters (especially for k-Means,
+            where the clusters do not give that much information about the labels).
 
 
 
@@ -273,6 +362,6 @@
 
         [3] https://people.eecs.berkeley.edu/~jordan/courses/294-fall09/lectures/clustering/slides.pdf
 
-
+        [4] https://www.linkedin.com/pulse/finding-optimal-number-clusters-k-means-through-elbow-asanka-perera/
 
     \end{document}

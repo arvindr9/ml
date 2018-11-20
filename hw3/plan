@@ -5,27 +5,6 @@ Try silhouette analysis if elbow goes wrong or if there is more time.
 
 GMM: try using BIC
 
-5.
-
-Use the predict_proba in GMM
-
-Use the transform in k-means
-
-PCA: accuracy vs. number of dimensions
-
-folder arrangement:
-
-pima: has all scripts for pima indians
-mushrooms: has all scripts for mushrooms <-- Note: there will be duplicate(-ish) scripts
-paper: contains the tex, pdf, other files for the paper
-
-clustering1: scripts for initial clustering
-clustering2: scripts for clustering after applying pca
-clustering3: scripts for clustering to reduce dimension of the data
-
-include why cross validation wasn't used:
-
-
 discrepancies: clusters of pima (when k = 2)
 
 135:

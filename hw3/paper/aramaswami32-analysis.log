@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.21)  20 NOV 2018 07:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.21)  20 NOV 2018 09:17
 entering extended mode
 **c:/Users/arvin/Desktop/ml/hw3/paper/aramaswami32-analysis.tex
 (c:/Users/arvin/Desktop/ml/hw3/paper/aramaswami32-analysis.tex
@@ -298,20 +298,6 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \c@lstlisting=\count126
-<../pima/clustering1/gmm_init.png, id=1, 462.528pt x 346.896pt>
-File: ../pima/clustering1/gmm_init.png Graphic file (type png)
-<use ../pima/clustering1/gmm_init.png>
-Package pdftex.def Info: ../pima/clustering1/gmm_init.png  used on input line 138.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-<../pima/clustering1/km_init.png, id=3, 462.528pt x 346.896pt>
-File: ../pima/clustering1/km_init.png Graphic file (type png)
-<use ../pima/clustering1/km_init.png>
-Package pdftex.def Info: ../pima/clustering1/km_init.png  used on input line 139.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-
-Overfull \hbox (17.20012pt too wide) in paragraph at lines 138--140
-[] [] 
- []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -322,134 +308,131 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{C:/Users/arvin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-<../mushrooms/clustering1/gmm_init.png, id=11, 462.528pt x 346.896pt>
+<../pima/clustering1/gmm_init.png, id=8, 462.528pt x 346.896pt>
+File: ../pima/clustering1/gmm_init.png Graphic file (type png)
+<use ../pima/clustering1/gmm_init.png>
+Package pdftex.def Info: ../pima/clustering1/gmm_init.png  used on input line 163.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+<../pima/clustering1/km_init.png, id=10, 462.528pt x 346.896pt>
+File: ../pima/clustering1/km_init.png Graphic file (type png)
+<use ../pima/clustering1/km_init.png>
+Package pdftex.def Info: ../pima/clustering1/km_init.png  used on input line 164.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+ [2]
+<../mushrooms/clustering1/gmm_init.png, id=14, 462.528pt x 346.896pt>
 File: ../mushrooms/clustering1/gmm_init.png Graphic file (type png)
 <use ../mushrooms/clustering1/gmm_init.png>
-Package pdftex.def Info: ../mushrooms/clustering1/gmm_init.png  used on input line 154.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-<../mushrooms/clustering1/km_init.png, id=12, 462.528pt x 346.896pt>
+Package pdftex.def Info: ../mushrooms/clustering1/gmm_init.png  used on input line 179.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+<../mushrooms/clustering1/km_init.png, id=15, 462.528pt x 346.896pt>
 File: ../mushrooms/clustering1/km_init.png Graphic file (type png)
 <use ../mushrooms/clustering1/km_init.png>
-Package pdftex.def Info: ../mushrooms/clustering1/km_init.png  used on input line 155.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-
-Overfull \hbox (17.20012pt too wide) in paragraph at lines 154--156
-[] [] 
- []
-
-[2 <../pima/clustering1/gmm_init.png> <../pima/clustering1/km_init.png> <../mushrooms/clustering1/gmm_init.png> <../mushrooms/clustering1/km_init.png>]
-<../pima/pca/diabetes_pca.png, id=21, 462.528pt x 346.896pt>
+Package pdftex.def Info: ../mushrooms/clustering1/km_init.png  used on input line 180.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+ [3 <../pima/clustering1/gmm_init.png> <../pima/clustering1/km_init.png> <../mushrooms/clustering1/gmm_init.png> <../mushrooms/clustering1/km_init.png>]
+<../pima/pca/diabetes_pca.png, id=23, 462.528pt x 346.896pt>
 File: ../pima/pca/diabetes_pca.png Graphic file (type png)
 <use ../pima/pca/diabetes_pca.png>
-Package pdftex.def Info: ../pima/pca/diabetes_pca.png  used on input line 177.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-<../mushrooms/pca/mushrooms_pca.png, id=22, 462.528pt x 346.896pt>
+Package pdftex.def Info: ../pima/pca/diabetes_pca.png  used on input line 202.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+<../mushrooms/pca/mushrooms_pca.png, id=24, 462.528pt x 346.896pt>
 File: ../mushrooms/pca/mushrooms_pca.png Graphic file (type png)
 <use ../mushrooms/pca/mushrooms_pca.png>
-Package pdftex.def Info: ../mushrooms/pca/mushrooms_pca.png  used on input line 189.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
- [3 <../pima/pca/diabetes_pca.png>]
-<../pima/clustering2/gmm_pca.png, id=27, 462.528pt x 346.896pt>
+Package pdftex.def Info: ../mushrooms/pca/mushrooms_pca.png  used on input line 214.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+ [4 <../pima/pca/diabetes_pca.png>]
+<../pima/clustering2/gmm_pca.png, id=29, 462.528pt x 346.896pt>
 File: ../pima/clustering2/gmm_pca.png Graphic file (type png)
 <use ../pima/clustering2/gmm_pca.png>
-Package pdftex.def Info: ../pima/clustering2/gmm_pca.png  used on input line 204.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-<../pima/clustering2/km_pca.png, id=28, 462.528pt x 346.896pt>
+Package pdftex.def Info: ../pima/clustering2/gmm_pca.png  used on input line 229.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+<../pima/clustering2/km_pca.png, id=30, 462.528pt x 346.896pt>
 File: ../pima/clustering2/km_pca.png Graphic file (type png)
 <use ../pima/clustering2/km_pca.png>
-Package pdftex.def Info: ../pima/clustering2/km_pca.png  used on input line 205.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-
-Overfull \hbox (17.20012pt too wide) in paragraph at lines 204--206
-[] [] 
- []
-
-[4 <../mushrooms/pca/mushrooms_pca.png>]
-<../pima/clustering2/cluster_gmm_pca.png, id=33, 462.528pt x 346.896pt>
-File: ../pima/clustering2/cluster_gmm_pca.png Graphic file (type png)
-<use ../pima/clustering2/cluster_gmm_pca.png>
-Package pdftex.def Info: ../pima/clustering2/cluster_gmm_pca.png  used on input line 217.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-<../pima/clustering2/cluster_km_pca.png, id=34, 462.528pt x 346.896pt>
-File: ../pima/clustering2/cluster_km_pca.png Graphic file (type png)
-<use ../pima/clustering2/cluster_km_pca.png>
-Package pdftex.def Info: ../pima/clustering2/cluster_km_pca.png  used on input line 218.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-
-Overfull \hbox (17.20012pt too wide) in paragraph at lines 217--219
-[][] [] 
- []
-
-<../mushrooms/clustering2/gmm_pca.png, id=35, 462.528pt x 346.896pt>
+Package pdftex.def Info: ../pima/clustering2/km_pca.png  used on input line 230.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+ [5 <../mushrooms/pca/mushrooms_pca.png> <../pima/clustering2/gmm_pca.png> <../pima/clustering2/km_pca.png>]
+<../pima/clustering2/cluster_2_gmm_pca.png, id=37, 462.528pt x 346.896pt>
+File: ../pima/clustering2/cluster_2_gmm_pca.png Graphic file (type png)
+<use ../pima/clustering2/cluster_2_gmm_pca.png>
+Package pdftex.def Info: ../pima/clustering2/cluster_2_gmm_pca.png  used on input line 244.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+<../pima/clustering2/cluster_2_km_pca.png, id=38, 462.528pt x 346.896pt>
+File: ../pima/clustering2/cluster_2_km_pca.png Graphic file (type png)
+<use ../pima/clustering2/cluster_2_km_pca.png>
+Package pdftex.def Info: ../pima/clustering2/cluster_2_km_pca.png  used on input line 245.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+<../pima/clustering2/cluster_4_gmm_pca.png, id=39, 462.528pt x 346.896pt>
+File: ../pima/clustering2/cluster_4_gmm_pca.png Graphic file (type png)
+<use ../pima/clustering2/cluster_4_gmm_pca.png>
+Package pdftex.def Info: ../pima/clustering2/cluster_4_gmm_pca.png  used on input line 249.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+<../pima/clustering2/cluster_4_km_pca.png, id=40, 462.528pt x 346.896pt>
+File: ../pima/clustering2/cluster_4_km_pca.png Graphic file (type png)
+<use ../pima/clustering2/cluster_4_km_pca.png>
+Package pdftex.def Info: ../pima/clustering2/cluster_4_km_pca.png  used on input line 250.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+<../mushrooms/clustering2/gmm_pca.png, id=41, 462.528pt x 346.896pt>
 File: ../mushrooms/clustering2/gmm_pca.png Graphic file (type png)
 <use ../mushrooms/clustering2/gmm_pca.png>
-Package pdftex.def Info: ../mushrooms/clustering2/gmm_pca.png  used on input line 222.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-<../mushrooms/clustering2/km_pca.png, id=36, 462.528pt x 346.896pt>
+Package pdftex.def Info: ../mushrooms/clustering2/gmm_pca.png  used on input line 260.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+<../mushrooms/clustering2/km_pca.png, id=42, 462.528pt x 346.896pt>
 File: ../mushrooms/clustering2/km_pca.png Graphic file (type png)
 <use ../mushrooms/clustering2/km_pca.png>
-Package pdftex.def Info: ../mushrooms/clustering2/km_pca.png  used on input line 223.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-
-Overfull \hbox (17.20012pt too wide) in paragraph at lines 222--224
-[] [] 
- []
-
-[5 <../pima/clustering2/gmm_pca.png> <../pima/clustering2/km_pca.png> <../pima/clustering2/cluster_gmm_pca.png> <../pima/clustering2/cluster_km_pca.png>]
-<../mushrooms/clustering2/cluster_gmm_pca.png, id=44, 462.528pt x 346.896pt>
+Package pdftex.def Info: ../mushrooms/clustering2/km_pca.png  used on input line 261.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+ [6 <../pima/clustering2/cluster_2_gmm_pca.png> <../pima/clustering2/cluster_2_km_pca.png> <../pima/clustering2/cluster_4_gmm_pca.png> <../pima/clustering2/cluster_4_km_pca.png>]
+<../mushrooms/clustering2/cluster_gmm_pca.png, id=50, 462.528pt x 346.896pt>
 File: ../mushrooms/clustering2/cluster_gmm_pca.png Graphic file (type png)
 <use ../mushrooms/clustering2/cluster_gmm_pca.png>
-Package pdftex.def Info: ../mushrooms/clustering2/cluster_gmm_pca.png  used on input line 231.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-<../mushrooms/clustering2/cluster_km_pca.png, id=45, 462.528pt x 346.896pt>
+Package pdftex.def Info: ../mushrooms/clustering2/cluster_gmm_pca.png  used on input line 269.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+<../mushrooms/clustering2/cluster_km_pca.png, id=51, 462.528pt x 346.896pt>
 File: ../mushrooms/clustering2/cluster_km_pca.png Graphic file (type png)
 <use ../mushrooms/clustering2/cluster_km_pca.png>
-Package pdftex.def Info: ../mushrooms/clustering2/cluster_km_pca.png  used on input line 232.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-
-Overfull \hbox (17.20012pt too wide) in paragraph at lines 231--233
-[][] [] 
- []
-
-[6 <../mushrooms/clustering2/gmm_pca.png> <../mushrooms/clustering2/km_pca.png> <../mushrooms/clustering2/cluster_gmm_pca.png> <../mushrooms/clustering2/cluster_km_pca.png>]
-<../pima/nn_pca/nn_pca.png, id=53, 462.528pt x 346.896pt>
+Package pdftex.def Info: ../mushrooms/clustering2/cluster_km_pca.png  used on input line 270.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+ [7 <../mushrooms/clustering2/gmm_pca.png> <../mushrooms/clustering2/km_pca.png> <../mushrooms/clustering2/cluster_gmm_pca.png> <../mushrooms/clustering2/cluster_km_pca.png>]
+<../pima/nn_pca/nn_pca.png, id=60, 462.528pt x 346.896pt>
 File: ../pima/nn_pca/nn_pca.png Graphic file (type png)
 <use ../pima/nn_pca/nn_pca.png>
-Package pdftex.def Info: ../pima/nn_pca/nn_pca.png  used on input line 250.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-<../pima/clustering3/gmm_acc.png, id=54, 462.528pt x 346.896pt>
+Package pdftex.def Info: ../pima/nn_pca/nn_pca.png  used on input line 294.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+ [8 <../pima/nn_pca/nn_pca.png>]
+<../pima/clustering3/gmm_acc.png, id=65, 462.528pt x 346.896pt>
 File: ../pima/clustering3/gmm_acc.png Graphic file (type png)
 <use ../pima/clustering3/gmm_acc.png>
-Package pdftex.def Info: ../pima/clustering3/gmm_acc.png  used on input line 263.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-<../pima/clustering3/km_acc.png, id=55, 462.528pt x 346.896pt>
+Package pdftex.def Info: ../pima/clustering3/gmm_acc.png  used on input line 326.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+<../pima/clustering3/km_acc.png, id=66, 462.528pt x 346.896pt>
 File: ../pima/clustering3/km_acc.png Graphic file (type png)
 <use ../pima/clustering3/km_acc.png>
-Package pdftex.def Info: ../pima/clustering3/km_acc.png  used on input line 264.
-(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-
-Overfull \hbox (17.20012pt too wide) in paragraph at lines 263--265
-[][] [] 
- []
-
-[7 <../pima/nn_pca/nn_pca.png>]
-Overfull \hbox (0.29114pt too wide) in paragraph at lines 274--275
+Package pdftex.def Info: ../pima/clustering3/km_acc.png  used on input line 327.
+(pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
+ [9 <../pima/clustering3/gmm_acc.png> <../pima/clustering3/km_acc.png>]
+Overfull \hbox (0.29114pt too wide) in paragraph at lines 363--364
 []\OT1/cmr/m/n/10.95 [3] https://people.eecs.berkeley.edu/ jordan/courses/294-fall09/lectures/clustering/slides.pdf 
  []
 
-[8 <../pima/clustering3/gmm_acc.png> <../pima/clustering3/km_acc.png>] (aramaswami32-analysis.aux) ) 
+
+Overfull \hbox (11.77948pt too wide) in paragraph at lines 365--366
+[]\OT1/cmr/m/n/10.95 [4] https://www.linkedin.com/pulse/finding-optimal-number-clusters-k-means-through-elbow-asanka-
+ []
+
+[10] (aramaswami32-analysis.aux) ) 
 Here is how much of TeX's memory you used:
- 4954 strings out of 493307
- 71477 string characters out of 3138822
- 142192 words of memory out of 3000000
- 8428 multiletter control sequences out of 15000+200000
+ 4966 strings out of 493307
+ 71929 string characters out of 3138822
+ 141192 words of memory out of 3000000
+ 8436 multiletter control sequences out of 15000+200000
  5626 words of font info for 21 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,43p,359b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,12n,43p,410b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on aramaswami32-analysis.pdf (8 pages, 559449 bytes).
+Output written on aramaswami32-analysis.pdf (10 pages, 632506 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
