@@ -68,7 +68,7 @@
             is then trained on the training datasets produced by the two clustering
             algorithms.
            
-        \section{Results}
+        \section{Results and Analysis}
 
             \subsection{Initial clustering}
 
@@ -129,7 +129,8 @@
             For each of the two datasets,
             the GMM and K-means clustering were both run on the training set. To determine the optimal number
             of cluster, some form of a metric was plotted over the number of clusters. For K-means, this metric
-            was WCSS (within-cluster sums of squares), while metric for GMMs was BIC(Bayesian information criterion).
+            was WCSS (within-cluster sums of squares), while metric for GMMs was AIC(Alkaline
+            Information Criterion) and BIC(Bayesian information criterion).
             Here are the plots generated:
 
             \subsubsection{Initial clustering: Pima Indians Diabetes dataset}
@@ -138,14 +139,32 @@
             \includegraphics[width=8cm]{../pima/clustering1/km_init.png}
 
             In this dataset, a clear "elbow" can be seen at two clusters for the GMM,
-            and there is a slight "elbow" at three clusters for the K-means. This problem
-            is a binary classification problem (predicts whether someone has diabetes or not),
-            so it is reasonable for the number of clusters to be close to two.
+            and there is a slight "elbow" at three clusters for the K-means.
+
+            The gmm graph has an unintuitive dip at k = 6. However, this could
+            have just been due to randomness; there is no striking behavior seen
+            in the final experiment in the plot for the neural network when k = 6.
+            
+            % This problem
+            % is a binary classification problem (predicts whether someone has diabetes or not),
+            % so it is reasonable for the number of clusters to be close to two.
 
             \subsubsection{Initial clustering: Mushrooms dataset}
 
             \includegraphics[width=8cm]{../mushrooms/clustering1/gmm_init.png}
             \includegraphics[width=8cm]{../mushrooms/clustering1/km_init.png}
+
+            These two graphs look quite different. The plot for Gaussian Mixture
+            Models has a much sharper elbow, implying that this model does much
+            better when given a higher number of clusters compared to a low number,
+            unlike k-Means, which would run in the least cost manner when running
+            it with a smaller number of components.
+
+            A reasonable explanation for this disparity is that
+            K-means is sensitive to outliers and would put them in a separate
+            cluster by [3] and thus would need more clusters to minimize its cost.
+
+
             
             \subsection{PCA}
 
@@ -156,6 +175,23 @@
             \subsubsection{PCA: Pima Indians Diabetes dataset}
 
             \includegraphics[width=8cm]{../pima/pca/diabetes_pca.png}
+
+            When considering the visualization of the data reduced to two dimensions,
+            it can clearly be seen that there are two different regions, the vertical
+            region in the left hand side and the larger region in the right hand side.
+
+            The regions in this data do not align with their labels; for each region,
+            one half consists of cases of diabetes, and the other half consists of cases
+            without diabetes.
+
+            \subsubsection{PCA: Mushrooms dataset}
+
+            \includegraphics[width=8cm]{../mushrooms/pca/mushrooms_pca.png}
+
+            In this two-dimensional projection of the Mushrooms dataset, we can see clear candidates for clusters.
+            There are two blue regions. Also, there is an overlap of blue and red in the bottom left corner. In addition
+            to those main components, there are some outlying red and blue distributed around the upper right portion
+            of the graph.
 
             \subsection{Clustering after PCA}
 
@@ -168,11 +204,46 @@
             \includegraphics[width=8cm]{../pima/clustering2/gmm_pca.png}
             \includegraphics[width=8cm]{../pima/clustering2/km_pca.png}
 
+            This plot still has a slight dip at k = 6, but it is much smaller
+            than the dip that was created before PCA. Still, there is not any clear
+            information that can be obtained from this dip.
+
+            Aside from the dip, the graphs seem similar to the ones created before
+            the PCA algorithm had been run (an elbow at 2 clusters for the GMM
+            and at 3 clusters for the PCA).
+
+            Here are images of the clustering algorithms on the 2-dimensional data.
+
+            \includegraphics[width=8cm]{../pima/clustering2/cluster_gmm_pca.png}
+            \includegraphics[width=8cm]{../pima/clustering2/cluster_km_pca.png}
+
+            \subsubsection{Clustering after PCA: Mushrooms dataset}
+            
+            \includegraphics[width=8cm]{../mushrooms/clustering2/gmm_pca.png}
+            \includegraphics[width=8cm]{../mushrooms/clustering2/km_pca.png}
+
+            The above two graphs seem quite similar to each other. This is unlike how
+            they were before PCA, where the GMM had an elbow at a much larger number
+            of clusters compared to the GMM.
+
+            Here are images of the clustering algorithms on the 2-dimensional data.
+
+            \includegraphics[width=8cm]{../mushrooms/clustering2/cluster_gmm_pca.png}
+            \includegraphics[width=8cm]{../mushrooms/clustering2/cluster_km_pca.png}
+
             \subsection{Training a neural network after PCA}
 
             The Pima Indians dataset was split such that 60 percent of it
-            was training data and 20 percent was testing data. Here is a plot
-            of the accuracy of the neural network (training and testing) with
+            was training data and 20 percent was testing data.
+            
+            Cross-validation was not necessary, since the objective here is not
+            to produce the best neural network possible, but to rather observe
+            and analyze the similarities in the neural network performance
+            based on how the dimensions are reduced. Cross-validation adds an
+            overcomplication which detracts from the main purpose of these
+            experiments.
+            
+            Here is a plot of the accuracy of the neural network (training and testing) with
             respect to the number of principal components generated in the
             PCA algorithm:
 
@@ -197,6 +268,10 @@
         \section{Sources}
 
         [1] https://www.kaggle.com/uciml/pima-indians-diabetes-database
+
+        [2] https://www.kaggle.com/uciml/mushroom-classification
+
+        [3] https://people.eecs.berkeley.edu/~jordan/courses/294-fall09/lectures/clustering/slides.pdf
 
 
 

@@ -25,8 +25,8 @@ nn = MLP()
 print(x_train.shape)
 print(y_train.shape)
 nn.fit(x_train, y_train)
-real_test_acc = accuracy_score(nn.predict(x_train), y_train)
-real_train_acc = accuracy_score(nn.predict(x_test), y_test)
+real_train_acc = accuracy_score(nn.predict(x_train), y_train)
+real_test_acc = accuracy_score(nn.predict(x_test), y_test)
 train_acc = []
 test_acc = []
 

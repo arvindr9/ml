@@ -29,17 +29,20 @@ print(y_train[:n_samples].reshape(1, -1))
 
 print("Elbow method for GMM")
 
+aic = []
 bic = []
 for i in range(1, 11):
         gmm = GaussianMixture(n_components = i)
         gmm.fit(x_train)
+        aic.append(gmm.aic(x_train))
         bic.append(gmm.bic(x_train))
 
 fig, ax = plt.subplots()
 plt.title("Clustering after PCA: GMM")
 plt.xlabel("number of components")
-plt.ylabel("BIC")
+plt.plot(range(1, 11), aic)
 plt.plot(range(1, 11), bic)
+plt.legend(["AIC", "BIC"])
 plt.savefig("gmm_pca.png")
 
 
@@ -58,3 +61,17 @@ plt.xlabel("number of clusters")
 plt.ylabel("WCSS")
 plt.plot(range(1, 11), wcss)
 plt.savefig("km_pca.png")
+
+print("KMeans cluster display")
+y_pred = KMeans(n_clusters=2).fit_predict(x_train)
+f, ax = plt.subplots()
+plt.title("K means")
+plt.scatter(x_train[:, 0], x_train[:, 1], c = y_pred)
+plt.savefig("cluster_km_pca.png")
+
+print("GMM cluster display")
+y_pred = GaussianMixture(n_components=2).fit_predict(x_train)
+f, ax = plt.subplots()
+plt.title("GMM")
+plt.scatter(x_train[:, 0], x_train[:, 1], c = y_pred)
+plt.savefig("cluster_gmm_pca.png")

@@ -45,17 +45,20 @@ print(y_train[:n_samples].reshape(1, -1))
 
 print("Elbow method for GMM")
 
+aic = []
 bic = []
 for i in range(1, 11):
         gmm = GaussianMixture(n_components = i)
         gmm.fit(x_train)
+        aic.append(gmm.aic(x_train))
         bic.append(gmm.bic(x_train))
 
 fig, ax = plt.subplots()
 plt.title("Initial clustering: GMM")
 plt.xlabel("number of components")
-plt.ylabel("BIC")
+plt.plot(range(1, 11), aic)
 plt.plot(range(1, 11), bic)
+plt.legend(["AIC", "BIC"])
 plt.savefig("gmm_init.png")
 
 

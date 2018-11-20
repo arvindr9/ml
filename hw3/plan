@@ -24,12 +24,9 @@ clustering2: scripts for clustering after applying pca
 clustering3: scripts for clustering to reduce dimension of the data
 
 include why cross validation wasn't used:
-Cross-validation was not necessary, since the objective here is not
-to produce the best neural network possible, but to rather observe
-and analyze the similarities in the neural network performance
-based on how the dimensions are reduced. Cross-validation adds an
-overcomplication which detracts from the main purpose of these
-experiments.
+
+
+discrepancies: clusters of pima (when k = 2)
 
 135:
 
