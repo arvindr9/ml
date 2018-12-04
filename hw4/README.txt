@@ -31,3 +31,5 @@ Experiments to run in RL-MDP:
 
 Screenshots were taken after these were run (located in the images folder)
 paper: contains the tex and pdf file for the maze
+
+Files (images and mazes) can be found here: https://github.com/arvindr9/ml/tree/master/hw4
