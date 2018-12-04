@@ -54,7 +54,7 @@
             by minimizing the number of walls that are bumped into.
             
             One of the problems is a maze on a 10 x 10 grid, and the other one is
-            a maze on a 70 x 70 grid. For the purposes of these experiments, %change to larger state space?
+            a maze on a 45 x 45 grid. For the purposes of these experiments, %change to larger state space?
             this maze problem is interesting, since the two-dimensional state space allows the
             optimal action from each state to be readable to the human eye. Thus,
             the arrangement of the states in gridworld allows one to effectively tell
@@ -62,7 +62,7 @@
             actions at every state.
 
             Many well-known MDP's like GridWorld involve maximizing some positive
-            amount of expected reward, but it is interesting that reinforcement can
+            amount of expected reward, but it is interesting that MDPs can
             alternatively be applied for cost-minimization problems (in this case
             minimizing the number of walls that are bumped into).
             
@@ -76,6 +76,15 @@
             random state. In the RL-MDP simulation, this feature is controlled by the value of the PJOG parameter,
             which is set to .3 (which means there is a 1 - .3 = .7
             chance of the agent going in the intended direction).
+
+            The experiments evaluated the performance (with regards to
+            the runtime) of the MDP algorithms
+            for value iteration and policy iteration and for the reinforcement learning
+            algorithm for Q-learning.
+
+            The experiments included an observation of the error in policy caused by Q-learning
+            and also how altering the parameter $\epsilon$ altered the accuracy of the
+            policy in certain portions of the grid.
 
            
         \section{Results and Analysis}
@@ -109,14 +118,14 @@
 
             The iter. limit parameter (the maximum number
             of times for the policy to be evaluated) was set
-            to 10, and the value limit (the maximum number of
+            to 5000, and the value limit (the maximum number of
             value updates within each policy iteration) was
-            set to 5000. The algorithm converged within 6 policy
+            set to 10. The algorithm converged within 6 policy
             evaluation iterations, taking a total of 19 ms.
 
 
             Here, policy evaluation worked more quickly than value iteration and
-            still gave similar result on the maze tile values. Of course, each
+            still gave similar results on the maze tile values. Of course, each
             policy iteration took much longer than each value iteration,
             since the number of steps in the algorithm was equal to $S^2 * 10$,
             but there were much fewer iterations in the policy iteration algorithm.
@@ -190,6 +199,29 @@
             possible actions, which the agent meeds to try one at a time in order to achieve
             the information that an MDP has.
 
+            The same experiment was run using the $\epsilon$-greedy method for multiple
+            values of $\epsilon$. $\epsilon$ is the probability that an agent will make a random
+            move (the agent follows its policy with probability $1 - \epsilon$).
+            Here are snapshots of the top right corner of the maze that were taken for epsilon values
+            of $0$, $0.1$, $0.2$, and $0.5$ respectively:
+
+            \includegraphics[width=4cm]{../images/small/tr_eps0.PNG}
+           \includegraphics[width=4cm]{../images/small/tr_eps01.PNG}
+            \includegraphics[width=4cm]{../images/small/tr_eps02.PNG}
+            \includegraphics[width=4cm]{../images/small/tr_eps05.PNG}
+
+            The policies become more accurate as the value of epsilon increases
+            (for example, for larger values of epsilon, the policy has more
+            of a tendency to be downward and less of a tendency to
+            be upward).
+            This is because
+            decreasing epsilon reduces the chance for the agent to take risks,
+            so for small values of epsilon like $0$ or $0.1$, the agent prefers
+            the bottom half of the grid. Increasing the value of epsilon increases
+            the probability that the agent will explore the upper portion of the
+            grid, allowing for more accurate policy calculations to occur in the upper
+            states.
+
         \subsection{Maze: More States}
 
             Here is the image of the particular maze used for a large
@@ -211,7 +243,12 @@
 
             \subsubsection{Policy Iteration}
 
-            \includegraphics[width=5cm]{../images/large/pi.PNG}
+            \includegraphics[width=8cm]{../images/large/pi.PNG}
+
+            Both of the algorithms visually produced similar results, since they
+            were both meant to run until convergence, which was to terminate
+            when the values would change by at most 0.001. However, there are
+            some key differences in their runtimes.
 
             The policy iteration converged after 18 steps for 10 inner
             policy iterations, and the algorithm
@@ -252,6 +289,9 @@
             \includegraphics[width=8cm]{../images/large/q_20.PNG}
             \includegraphics[width=8cm]{../images/large/q.PNG}
 
+            Q-learning was run again with the same parameters (1000 episodes,
+            epsilon = 0.1, learning rate = 0.7).
+
             The above images show the direction of the policy, and the shading
             of each tile represents the value at that tile. The image on the left
             shows the algorithm after 20 episodes, and the one on the right shows
@@ -270,6 +310,38 @@
             with each other. Several
             of the tiles have policies that indicate that the optimal action is upward, but
             this is obviously not true.
+
+            The same experiment was run using the $\epsilon$-greedy method for multiple
+            values of $\epsilon$. $\epsilon$ is the probability that an agent will make a random
+            move (the agent follows its policy with probability $1 - \epsilon$).
+            Here are snapshots of the top right corner of the maze that were taken for epsilon values
+            of $0$, $0.1$, $0.2$, and $0.5$ respectively:
+
+            \includegraphics[width=4cm]{../images/large/tr_eps0.PNG}
+           \includegraphics[width=4cm]{../images/large/tr_eps01.PNG}
+            \includegraphics[width=4cm]{../images/large/tr_eps02.PNG}
+            \includegraphics[width=4cm]{../images/large/tr_eps05.PNG}
+
+            The shade of blue as the value of $\epsilon$ increases is noticeable;
+            thus, the agent is more confident about what policy to choose from the
+            top right corner when the value for epsilon is larger.
+            
+        \section{Conclusion}
+
+            This was an interesting set of experiments that confirmed patterns
+            in reinforcement learning for MDP problems. The policy iteration
+            and value iteration algorithms generally converged to the same
+            values (although policy iteration was much faster when the number
+            of inner iterations was chosen carefully).
+
+            The reinforcement learning algorithms had a tendency to take much longer
+            to run since they had no access to the model. However, they ran reasonably
+            well on the bottom half of the grid given enough cycles and produced accurate
+            policies for that portion of the grid, since the agent had more of a tendency
+            to stay on that part of that grid. Increasing the value of epsilon improved
+            the Q-learning agents performance on the upper portion of the grid, since that
+            gave it more of a tendency to explore.
+
         \section{Sources}
         
         [1] https://www.cs.cmu.edu/~awm/rlsim/
