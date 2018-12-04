@@ -1,7 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1543894897 "c:/Users/arvin/Desktop/ml/hw4/paper/aramaswami32-analysis.tex" "aramaswami32-analysis.pdf" "aramaswami32-analysis" 1543894902
+["pdflatex"] 1543928177 "c:/Users/arvin/Desktop/ml/hw4/paper/aramaswami32-analysis.tex" "aramaswami32-analysis.pdf" "aramaswami32-analysis" 1543928180
   "../images/large/maze.PNG" 1543886348 31247 eb9cdb404e46a2f466772179fd01c15f ""
   "../images/large/pi.PNG" 1543893685 230672 9a70f0ee9311602846914b4b83e8ce5b ""
+  "../images/large/q.PNG" 1543927139 155137 fe6cbaa48ef07ba5254dc6e0d3b83210 ""
+  "../images/large/q_20.PNG" 1543926968 159960 57baf19192419209614ec811199a19e7 ""
   "../images/large/vi.PNG" 1543871825 233399 708beec259c985cfb661b39c60932def ""
   "../images/small/maze.PNG" 1543869507 29703 c2ef0195d3bbffccbab8e5cf64d1cb2b ""
   "../images/small/pi.PNG" 1543890416 59920 1c57549ab86c49834afad396a9d1e98b ""
@@ -80,9 +82,9 @@
   "C:/Program Files/MiKTeX 2.9/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/arvin/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1516569361 4062055 802770c7e37e204a803c7bbb7498ee22 ""
   "C:/Users/arvin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1516567009 80423 3cfba73105275d3ad410701d89fbdf7a ""
-  "aramaswami32-analysis.aux" 1543894901 1122 f8cade0319a8baa1d2fbc5adf5e27a64 ""
-  "aramaswami32-analysis.tex" 1543894896 10974 da84ba6aaf42ef9fe939c0d77fa6ff4c ""
-  "c:/Users/arvin/Desktop/ml/hw4/paper/aramaswami32-analysis.tex" 1543894896 10974 da84ba6aaf42ef9fe939c0d77fa6ff4c ""
+  "aramaswami32-analysis.aux" 1543928179 1109 d93715887c1b058386899337793dfcdb ""
+  "aramaswami32-analysis.tex" 1543928173 14411 0aa690dd5ee09010e88920c00f599a36 ""
+  "c:/Users/arvin/Desktop/ml/hw4/paper/aramaswami32-analysis.tex" 1543928173 14411 0aa690dd5ee09010e88920c00f599a36 ""
   (generated)
   "aramaswami32-analysis.pdf"
   "aramaswami32-analysis.log"

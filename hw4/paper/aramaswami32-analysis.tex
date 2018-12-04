@@ -40,20 +40,31 @@
 
             \subsection{MDP problems}
 
-            Both of the MDP problems are variants Gridworld. Gridworld is a rectangular board
+            Both of the MDP problems are variants of a maze problem. This is a rectangular board
             with multiple tiles, and from a certain tile $s$, the agent can choose to move
             up, down, left, or right. When choosing an action $a$ from state $s$, the agent
             will move to some state $s'$ with a transition probability $T(s, a, s')$. The
             goal is to find an optimal state-to-action mapping such that the expected reward
             is maximized over several states.
+
+            There are walls on the grid, and bumping into them produces a penalty of 50 (
+            for the sake of this MDP problem, this can be interpreted as a gain of -50
+            reward
+            ). Thus, a way to think of this problem is that we want to maximize reward
+            by minimizing the number of walls that are bumped into.
             
-            One of the problems is GridWorld on a 10 x 10 grid, and the other one is
-            GridWorld on a 70 x 70 grid. For the purposes of these experiments, %change to larger state space?
-            GridWorld is interesting, since the two-dimensional state space allows the
+            One of the problems is a maze on a 10 x 10 grid, and the other one is
+            a maze on a 70 x 70 grid. For the purposes of these experiments, %change to larger state space?
+            this maze problem is interesting, since the two-dimensional state space allows the
             optimal action from each state to be readable to the human eye. Thus,
             the arrangement of the states in gridworld allows one to effectively tell
             how well one algorithm is doing compared to the other just by eyeballing the
             actions at every state.
+
+            Many well-known MDP's like GridWorld involve maximizing some positive
+            amount of expected reward, but it is interesting that reinforcement can
+            alternatively be applied for cost-minimization problems (in this case
+            minimizing the number of walls that are bumped into).
             
             
 
@@ -144,18 +155,45 @@
 
             \subsubsection{RL}
 
-            On this MDP, Q-learning was done for 1000 episodes.
+            On this MDP, Q-learning was done for 1000 episodes. The learning
+            rate was set to 0.7, and it was made such that it decays.
 
             \includegraphics[width=5cm]{../images/small/q_middle.PNG}
             \includegraphics[width=5cm]{../images/small/q_1000.PNG}
 
             There were much more iterations done for Q-learning than
-            for the other two algorithms, but the policy is less clear.
+            for the other two algorithms, but the policy is less clear
+            (as can be seen as the values here are not as dark, implying
+            that the Q-learning agent has been trained much less). For example,
+            consider the block that is at the fourth column from the left
+            and on the second row from the top. This block is more lightly shaded,
+            implying that the RL algorithm has less confidence about what the
+            expected reward would be starting from that state. RL Sim did
+            not include an option to run the algorithm until convergence,
+            but it is obvious becuase of this difference in tile shadings
+            that this Q-learning algorithm did not converge even after 1000
+            entire iterations.
+
+            The value iteration algorithm had only taken 61 steps to converge,
+            each step which took $O(s^2)$ time. Each of the 1000 steps in the
+            Q-learning algorithm took $O(s)$ time (a week lower bound on the
+            time, since the agent initially travels much more since it is
+            new to the environment).
+
+            It makes sense that the Q-learning algorithm would take much longer to
+            converge. Reinforcement learning algorithms have to undergo an exploration/exploitation
+            tradeoff, which is not present in the MDP algorithms, since the MDP algorithms
+            already have perfect information about the rewards and the transition functions.
+            Thus, the reinforcement learning algorithms ended up taking a significantly
+            longer time than the MDP algorithms. Even in the 10 x 10 maze, where
+            the state space is quite small, there are still 100 total states and almost 400
+            possible actions, which the agent meeds to try one at a time in order to achieve
+            the information that an MDP has.
 
         \subsection{Maze: More States}
 
             Here is the image of the particular maze used for a large
-            number of states:
+            number of states. The end state is represented by the orange square.
 
             \includegraphics[width=5cm]{../images/large/maze.PNG}
             
@@ -163,7 +201,7 @@
             \subsubsection{Value iteration}
 
             %\includegraphics[width=5cm]{../images/large/vi_100.PNG}
-            \includegraphics[width=10cm]{../images/large/vi.PNG}
+            \includegraphics[width=8cm]{../images/large/vi.PNG}
 
             The image above is the final
             distribution of the values and policies
@@ -209,16 +247,29 @@
             having fewer value updates causes certain policy estimates to be vulnerable to noise,
             so there would be a delay in the runtime of the algorithm.
 
-        \subsection{RL Algorithm Results}
+            \subsubsection{RL}
 
-        The reinforcement learning algorithms have to undergo an exploration/exploitation
-        tradeoff, which is not present in the MDP algorithms, since the MDP algorithms
-        already have perfect information about the rewards and the transition functions.
-        Thus, the reinforcement learning algorithms ended up taking a significantly
-        longer time than the MDP algorithms. Even in the 10 x 10 maze, where
-        the state space is quite small, there are still 100 total states and almost 400
-        possible actions, which the agent meeds to try one at a time in order to achieve
-        the information that an MDP has.
+            \includegraphics[width=8cm]{../images/large/q_20.PNG}
+            \includegraphics[width=8cm]{../images/large/q.PNG}
+
+            The above images show the direction of the policy, and the shading
+            of each tile represents the value at that tile. The image on the left
+            shows the algorithm after 20 episodes, and the one on the right shows
+            the completed algorithm after running for 1000 episodes.
+
+            One trend that is noticeable is that the Q-learning algorithm has produced
+            very accurate policies at the bottom left corner of the grid. Unlike in value
+            iteration and policy iteration, the value tiles at the bottom left corner of
+            the grid are very dark, indicating a strong confidence of the algorithm about
+            what needs to be done from the states of that region to maximize the reward.
+
+            However, even after 1000 cycles (which involves significantly more computations
+            than policy iteration and value iteration, for similar reasoning as was
+            mentioned in the discussion of the Q-learning algorithm for the smaller maze),
+            the policies at the top right corner of the grid are very inconsistent
+            with each other. Several
+            of the tiles have policies that indicate that the optimal action is upward, but
+            this is obviously not true.
         \section{Sources}
         
         [1] https://www.cs.cmu.edu/~awm/rlsim/
